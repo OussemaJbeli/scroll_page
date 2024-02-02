@@ -1,0 +1,181 @@
+/* ********sec7 */
+.sec7{
+    background-color: #2d3a56;
+    position: relative;
+    width: 100%;
+}
+.sec7 .body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+/* second_part */
+.sec7 .body .second_part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin-top: 10.13vw;
+}
+.sec7 .body .second_part .card_des{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.sec7 .body .second_part .card1 .title{
+    height: 50px;
+}
+.sec7 .body .second_part .card1 .desc{
+    color: #fff;
+    font-size: 11px;
+    margin-top: 0.8vw;
+}
+.sec7 .body .second_part .card2 .title{
+    height: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+.sec7 .body .second_part .card2 .desc{
+    color: #fff;
+    font-size: 13px;
+    margin-top: 0.8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sec7 .body .second_part .card2 .desc ul li{
+    margin:0 0 1.2vw 7.25vw;
+    color: #cdad0f;
+}
+.sec7 .body .second_part .card2 .desc ul li p{
+    color: #ffffff;
+}
+.sec7 .body .second_part .card3 .title{
+    height: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+.sec7 .body .second_part .card3 .desc1{
+    color: #fff;
+    font-size: 13px;
+    margin-top: 0.8vw;
+}
+.sec7 .body .second_part .card3 .desc2{
+    color: #fff;
+    outline: none;
+    background-color: transparent;
+    border: 0.2vw solid #c1c1c1;
+    border-radius: 5px;
+    padding: 7px;
+    margin-top: 1.2vw;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    margin-left: 20px;
+}
+.sec7 .body .second_part .card3 .desc3{
+    width: 100%;
+    margin-top: 1.2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec7 .body .second_part .card3 .send{
+    width: 100%;
+}
+.sec7 .body .second_part .card3 .desc3 .links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sec7 .body .second_part .card3 .desc3 .icon{
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 1vw;
+}
+.sec7 .body .second_part .card3 .desc3 .links .icon1{
+    background-image: url(../upload/twitter-alt.svg);
+    transition: .4s ease;
+}
+.sec7 .body .second_part .card3 .desc3 .links .icon2{
+    background-image: url(../upload/linkedin.svg);
+    transition: .4s ease;
+}
+.sec7 .body .second_part .card3 .desc3 .links .icon3{
+    background-image: url(../upload/instagram.svg);
+    transition: .4s ease;
+}
+.sec7 .body .second_part .card3 .desc3 .links .icon1:hover{
+    transform: translateY(-10px);
+}
+.sec7 .body .second_part .card3 .desc3 .links .icon2:hover{
+    transform: translateY(-10px);
+}
+.sec7 .body .second_part .card3 .desc3 .links .icon3:hover{
+    transform: translateY(-10px);
+}
+.sec7 .body .second_part .card3 .desc3 button {
+    direction: rtl;
+    font-family: inherit;
+    font-size: 20px;
+    background: #41c0c9;
+    padding: .8vw 1.2vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  
+  .sec7 .body .second_part .card3 .desc3 button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .sec7 .body .second_part .card3 .desc3 button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+    transform: rotateY(180deg);
+  }
+  
+  .sec7 .body .second_part .card3 .desc3 button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  .sec7 .body .second_part .card3 .desc3 button:hover svg {
+    transform: translateX(1.7em) rotate(-135deg) scale(1.1);
+  }
+  
+  .sec7 .body .second_part .card3 .desc3 button:hover span {
+    transform: translateX(5em);
+  }
+  
+  .sec7 .body .second_part .card3 .desc3 button:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+  

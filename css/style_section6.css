@@ -1,0 +1,70 @@
+/* ********sec6 */
+.sec6{
+    background-color: #fff;
+    position: relative;
+    padding: 6.25vw;
+    width: 100%;
+}
+.sec6 .body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+/* first_part */
+.sec6 .body .first_part{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #e4f6f7;
+    padding: 3.13vw;
+    border: 0 solid transparent;
+    border-radius: 4px;
+}
+.sec6 .body .first_part .card_des{
+    width: 30%;
+    height: 5vw;
+    display: flex;
+    flex-direction: row;
+    padding: 0 3.13vw;
+}
+.sec6 .body .first_part .card2{
+    border: 2px solid #c5c5c570;
+    border-color: transparent #a0a0a096;
+}
+.sec6 .body .first_part .card_des .icon{
+    width: 5vw;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sec6 .body .first_part .card_des .card_desc{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    margin-right: 1.2vw;
+    height: 100%;
+}
+.sec6 .body .first_part .card_des .card_desc .number{
+    font-size: 48px;
+    font-weight: 900;
+    color: #86637a;
+}
+.sec6 .body .first_part .card_des .card_desc .desc{
+    font-size: 16px;
+    font-weight: 900;
+    color: #86637a;
+}
+.sec6 .body .first_part .card1 .icon{
+    background-image: url(../upload/users-alt.svg);
+}
+.sec6 .body .first_part .card2 .icon{
+    background-image: url(../upload/house-building.svg);
+}
+.sec6 .body .first_part .card3 .icon{
+    background-image: url(../upload/crown.svg);
+}
+
