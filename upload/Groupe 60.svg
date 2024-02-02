@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="476.235" height="271.554" viewBox="0 0 476.235 271.554">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_104" data-name="Rectangle 104" width="235.175" height="135.777" fill="#e4bea9"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectangle_104-3" data-name="Rectangle 104" width="114.569" height="66.146" fill="#e4bea9"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <rect id="Rectangle_104-5" data-name="Rectangle 104" width="74.648" height="43.097" fill="#e4bea9"/>
+    </clipPath>
+  </defs>
+  <g id="Groupe_60" data-name="Groupe 60" transform="translate(107 -790.517)">
+    <g id="Groupe_52" data-name="Groupe 52" transform="translate(-107 790.517)">
+      <g id="Groupe_51" data-name="Groupe 51" clip-path="url(#clip-path)">
+        <path id="Tracé_3492" data-name="Tracé 3492" d="M3.636,67.888l113.951,65.791L231.541,67.888,117.587,2.1Zm113.5,67.627L0,67.888Q58.8,33.947,117.587,0,176.4,33.912,235.176,67.888q-58.789,33.957-117.588,67.888Z" fill="#e4bea9"/>
+      </g>
+    </g>
+    <g id="Groupe_55" data-name="Groupe 55" transform="translate(85 926.294)">
+      <g id="Groupe_51-2" data-name="Groupe 51" clip-path="url(#clip-path)">
+        <path id="Tracé_3492-2" data-name="Tracé 3492" d="M3.636,67.888l113.951,65.791L231.541,67.888,117.587,2.1Zm113.5,67.627L0,67.888Q58.8,33.947,117.587,0,176.4,33.912,235.176,67.888q-58.789,33.957-117.588,67.888Z" fill="#e4bea9"/>
+      </g>
+    </g>
+    <g id="Groupe_53" data-name="Groupe 53" transform="translate(79.666 867.11)">
+      <g id="Groupe_51-3" data-name="Groupe 51" clip-path="url(#clip-path-3)">
+        <path id="Tracé_3492-3" data-name="Tracé 3492" d="M1.771,33.073,57.285,65.124,112.8,33.073,57.285,1.023ZM57.064,66.018,0,33.073Q28.644,16.538,57.285,0,85.935,16.521,114.57,33.073,85.93,49.616,57.285,66.146Z" fill="#e4bea9"/>
+      </g>
+    </g>
+    <g id="Groupe_54" data-name="Groupe 54" transform="translate(254.666 900.183)">
+      <g id="Groupe_51-4" data-name="Groupe 51" clip-path="url(#clip-path-3)">
+        <path id="Tracé_3492-4" data-name="Tracé 3492" d="M1.771,33.073,57.285,65.124,112.8,33.073,57.285,1.023ZM57.064,66.018,0,33.073Q28.644,16.538,57.285,0,85.935,16.521,114.57,33.073,85.93,49.616,57.285,66.146Z" fill="#e4bea9"/>
+      </g>
+    </g>
+    <g id="Groupe_56" data-name="Groupe 56" transform="translate(202.588 843.231)">
+      <g id="Groupe_51-5" data-name="Groupe 51" clip-path="url(#clip-path-5)">
+        <path id="Tracé_3492-5" data-name="Tracé 3492" d="M1.154,21.549l36.17,20.883,36.17-20.883L37.324.666ZM37.18,43.014,0,21.549Q18.663,10.775,37.324,0,55.991,10.764,74.648,21.549,55.987,32.327,37.324,43.1Z" fill="#e4bea9"/>
+      </g>
+    </g>
+  </g>
+</svg>
