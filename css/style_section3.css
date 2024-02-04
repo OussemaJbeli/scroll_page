@@ -1,7 +1,7 @@
 /* ********sec3 */
 .sec3{
     padding: 0;
-    width: 100%;
+    width: 100vw;
     background-color: #86637a;
 }
 .sec3 .body{
@@ -11,15 +11,21 @@
     width: 100%;
 }
 .sec3 .body .discription{
+    width: 450px;
+    height: 512px;
+    z-index: 3;
+    background-color: #86637a;
+    position: relative;
+}
+.sec3 .body .discription .under_disc{
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 450px;
-    height: 512px;
+    width: 100%;
+    height: 100%;
     padding: 3vw 6.25vw 3vw 20px;
-    position: relative;
-    z-index: 3;
-    background-color: #86637a;
+    position: absolute;
+    opacity: 0;
 }
 .sec3 .body .discription .title1{
     font-size: 48px;
@@ -119,7 +125,7 @@
   }
   
 .sec3 .body .slider .slider-wrapper:hover > .slider-item:not(:hover) {
-    filter: blur(10px);
+    filter: blur(3px);
     transform: scale(0.9, 0.9);
   }
 .sec3 .body .slider .slider-wrapper .hovered_slider{

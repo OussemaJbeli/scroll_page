@@ -25,5 +25,5 @@
     cursor: pointer;
 }
 .sec2 .body .cards .card:hover{
-    transform: scale(1.1);
+    transform: translateY(-30px);
 }

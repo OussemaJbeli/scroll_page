@@ -1,8 +1,4 @@
 @media (max-width:1300px){
-
-    .sec5 .body .discription .title{
-        min-height: 80px;
-    }
     .sec5 .body .cards_member{
         width: 600px;
         height: 170%;
@@ -67,10 +63,12 @@
     .sec3 .body .discription{
         height: 300px;
         width: 100%;
-        align-items: center;
-        padding: 3vw 6.25vw 50px 6.25vw;
         margin-bottom: 20px;
         z-index: 2;
+    }
+    .sec3 .body .discription .under_disc{
+        align-items: center;
+        padding: 3vw 6.25vw 50px 6.25vw;
     }
     .sec3 .body .discription .title1{
         font-size: 42px;
@@ -176,6 +174,7 @@
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
+        margin-top: 10px;
     }
     .sec7 .body .second_part .card_des .title{
         font-size: 20px;
@@ -205,16 +204,16 @@
     }
     .sec5 .body .cards_member{
         height: 190px;
-        left: -50px;
+        left: 0px;
         top: -70px;
     }
     .sec5 .body .cards_member img{
-        height: 150%;
+        height: 130%;
     }
     .sec5 .body .discription{
         width: 70%;
     }
-    .sec5 .body .discription .title p{
+    .sec5 .body .discription .title{
         font-size: 5vw;
     }
     .sec7 .body .second_part{
@@ -329,11 +328,18 @@
     .sec5 .body .discription{
         width: 90%;
     }
-    .sec5 .body .discription .title p{
+    .sec5 .body .discription .title{
         font-size: 6vw;
     }
     .sec5 .body .discription .btn-content2{
         height: 40px;
+    }
+    .sec7 .body .second_part .card3 .send{
+        display: flex;
+        flex-direction: column;
+    }
+    .sec7 .body .second_part .card3 .send .desc3{
+        margin-top: 15px;
     }
     footer{
         height: 70px;
@@ -362,7 +368,6 @@
         height: 300px;
         width: 100%;
         align-items: center;
-        padding: 3vw 6.25vw 50px 6.25vw;
         margin-bottom: 50px;
     }
     .sec3 .body .slider .slider-wrapper {
@@ -380,7 +385,7 @@
     .sec5 .body .cards_member{
         height: 120px;
         left: 0px;
-        top: 0px;
+        top: -40px;
     }
     .sec6 .body .first_part{
         flex-direction: column;
@@ -404,7 +409,10 @@
 @media (max-width:450px){
     nav .body ul{
         height: 100vh;
-        width: 300px;
+        width: 90%;
+    }
+    nav .body ul li{
+        font-size: 20px;
     }
     nav{
         height: 50px;

@@ -14,3 +14,13 @@ body{
 section{
     padding: 3.13vw 6.25vw;
 }
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #353e59bb;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 25px;
+    background-color: #ffaf6e;
+}

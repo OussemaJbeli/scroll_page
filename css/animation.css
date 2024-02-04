@@ -110,3 +110,32 @@
         transform: rotateZ(0deg);
     }
 }
+/* SVG animations */
+  @keyframes color_anim2 {
+    0% {
+      fill: #86637a;
+    }
+  
+    50% {
+      fill: var(--color-background);
+    }
+  
+    100% {
+      fill: #86637a;
+    }
+  }
+    
+  /* Button animations */
+  @-webkit-keyframes btn-content2 {
+    0% {
+      outline: 5px solid var(--color-background);
+      outline-offset: 0;
+    }
+  }
+  
+  @keyframes btn-content2 {
+    0% {
+      outline: 10px solid var(--color-background);
+      outline-offset: 0;
+    }
+  }
