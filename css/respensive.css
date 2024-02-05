@@ -75,7 +75,7 @@
     }
     .sec3 .body .discription .slide_discription .under_disc{
         align-items: center;
-        padding: 3vw 6.25vw 50px 6.25vw;
+        padding: 3vw 6.25vw 0px 6.25vw;
     }
     .sec3 .body .discription .title1{
         font-size: 42px;
@@ -88,8 +88,7 @@
         text-align: center;
     }
     .sec3 .body .discription .buttons{
-        bottom: 0;
-        left: 0px;
+        position: static;
         width: 100%;
         justify-content: center;
         align-items: center;
@@ -375,7 +374,7 @@
         font-size: 13px;
     }
     .sec3 .body .discription{
-        height: 300px;
+        height: 100%;
         width: 100%;
         align-items: center;
         margin-bottom: 50px;
@@ -445,6 +444,12 @@
     }
     .sec3 .content .sections section .details .title p{
         align-items: center;
+    }
+    .sec3 .body .discription .title2{
+        font-size: 5vw;
+    }
+    .sec3 .body .discription .disc{
+        font-size: 4vw;
     }
     footer{
         height: 50px;

@@ -33,6 +33,10 @@
     height: 100%;
     position: absolute;
     opacity: 0;
+    top: 0;
+}
+.sec3 .body .discription .slide_discription .disc1{
+    position: relative;
 }
 .sec3 .body .discription .title1{
     font-size: 48px;
