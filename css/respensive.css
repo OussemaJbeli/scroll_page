@@ -1,3 +1,8 @@
+@media (min-width:1800px){
+    .sec3 .body .discription{
+        width: 25%;
+    }
+}
 @media (max-width:1300px){
     .sec5 .body .cards_member{
         width: 600px;
@@ -65,8 +70,10 @@
         width: 100%;
         margin-bottom: 20px;
         z-index: 2;
+        align-items: center;
+        padding: 3vw 6.25vw 3vw 6.25vw;
     }
-    .sec3 .body .discription .under_disc{
+    .sec3 .body .discription .slide_discription .under_disc{
         align-items: center;
         padding: 3vw 6.25vw 50px 6.25vw;
     }
@@ -86,6 +93,9 @@
         width: 100%;
         justify-content: center;
         align-items: center;
+    }
+    .sec3 .body .discription .icon2{
+        width: 40%;
     }
     .sec3 .body .slider{
         width: 100%;

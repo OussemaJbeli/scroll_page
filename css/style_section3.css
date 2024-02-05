@@ -16,14 +16,21 @@
     z-index: 3;
     background-color: #86637a;
     position: relative;
+    padding: 3vw 6.25vw 3vw 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
-.sec3 .body .discription .under_disc{
+.sec3 .body .discription .slide_discription{
+    width: 100%;
+    position: relative;
+}
+.sec3 .body .discription .slide_discription .under_disc{
     display: flex;
     flex-direction: column;
     align-items: start;
     width: 100%;
     height: 100%;
-    padding: 3vw 6.25vw 3vw 20px;
     position: absolute;
     opacity: 0;
 }
