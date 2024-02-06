@@ -24,7 +24,6 @@
 }
 .sec6 .body .first_part .card_des{
     width: 30%;
-    height: 5vw;
     display: flex;
     flex-direction: row;
     padding: 0 3.13vw;
@@ -49,13 +48,13 @@
     height: 100%;
 }
 .sec6 .body .first_part .card_des .card_desc .number{
-    font-size: 48px;
-    font-weight: 900;
+    font-size: 66px;
+    font-family: 'DINNextLTArabic-Bold', sans-serif;
     color: #86637a;
 }
 .sec6 .body .first_part .card_des .card_desc .desc{
-    font-size: 16px;
-    font-weight: 900;
+    font-size: 24px;
+    font-family: 'DINNextLTArabic-Bold', sans-serif;
     color: #86637a;
 }
 .sec6 .body .first_part .card1 .icon{

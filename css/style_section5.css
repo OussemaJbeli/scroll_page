@@ -24,13 +24,14 @@
 .sec5 .body .discription .title{
     width: 60%;
     margin-bottom: 1.5vw;
-    font-size: 3vw;
-    font-weight: 500;
+    font-size: 54px;
+    font-family: 'DINNextLTArabic-Bold', sans-serif;
     color: #fff;
 }
 .sec5 .body .discription p{
     color: #fff;
-    font-size: 12px;
+    font-size: 17px;
+    font-family: 'DINNextLTArabic-Regular', sans-serif;
     margin-bottom: 1.5vw;
 }
 .sec5 .body .discription .btn-conteiner {
@@ -43,10 +44,10 @@
   }
   .sec5 .body .discription .btn-content2 {
     padding: 5px .8vw;
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 19px;
+    font-family: 'DINNextLTArabic-Regular', sans-serif;
     cursor: pointer;
-    width: 210px;
+    width: 270px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -54,8 +55,8 @@
     color: var(--color-text);
     background: var(--color-background);
     transition: 1s;
-    border: 0.2vw solid transparent;
-    border-radius: 0.8vw;
+    border: 0px solid transparent;
+    border-radius: 10px;
     box-shadow: 0 0 0.2em 0 var(--color-background);
   }
 
@@ -126,11 +127,11 @@
 
   .sec5 .body .cards_member{
     overflow: hidden;
-    height: 170%;
+    height: 100%;
     width: 650px;
     position: absolute;
     left: 6.25vw;
-    bottom: -5vw;
+    bottom: 5vw;
     z-index: 9;
     transition: .4s ease;
     display: flex;

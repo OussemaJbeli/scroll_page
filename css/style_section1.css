@@ -41,18 +41,20 @@
     justify-content: center;
 }
 .sec1 .main .body .text_part .title1{
-    font-size: 30px;
+    font-size: 57px;
     text-align: center;
+    font-family: 'DINNextLTArabic-light', sans-serif;
 }
 .sec1 .main .body .text_part .title2{
-    font-size: 70px;
-    font-weight: 700;
+    font-size: 80px;
+    font-family: 'DINNextLTArabic-Bold', sans-serif;
     text-align: center;
 }
 .sec1 .main .body .text_part .title3{
     font-size: 15px;
     width: 650px;
     margin-top: 40px;
+    font-family: 'DINNextLTArabic-Medium', sans-serif;
 }
 .sec1 .main .body .text_part .btn-conteiner {
     display: flex;
@@ -73,13 +75,13 @@
     align-items: center;
     padding: 5px 30px;
     text-decoration: none;
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 19px;
+    font-family: 'DINNextLTArabic-Regular', sans-serif;
     color: var(--color-text);
     background: var(--color-background);
     transition: 1s;
-    border: 0.2vw solid transparent;
-    border-radius: 0.8vw;
+    border: 0vw solid transparent;
+    border-radius: 10px;
     box-shadow: 0 0 0.2em 0 var(--color-background);
   }
   

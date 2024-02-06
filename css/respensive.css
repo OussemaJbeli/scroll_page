@@ -6,7 +6,6 @@
 @media (max-width:1300px){
     .sec5 .body .cards_member{
         width: 600px;
-        height: 170%;
     }
 }
  @media (max-width:1250px){
@@ -50,7 +49,6 @@
     }
     .sec5 .body .cards_member{
         width: 500px;
-        height: 150%;
     }
 }
 @media (max-width:1050px){
@@ -111,7 +109,6 @@
     }
     .sec5 .body .cards_member{
         width: 450px;
-        height: 150%;
     }
 }
 @media (max-width:1040px){
@@ -190,9 +187,6 @@
     }
 }
 @media (max-width:900px){
-    .sec6 .body .first_part .card_des{
-        height: 10vw;
-    }
     .sec6 .body .first_part .card_des .card_desc .number{
         font-size: 30px;
     }
@@ -266,44 +260,13 @@
         margin-top: 20px;
     }
     .sec1 .main .body .text_part .title1{
-        font-size: 25px;
+        font-size: 30px;
     }
     .sec1 .main .body .text_part .title2{
         font-size: 55px;
     }
     .sec1 .main .body .text_part .title3{
         font-size: 14px;
-    }
-    .sec2{
-        height: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .sec2 .card_des{
-        position: static;
-        width: 100%;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
-    .sec2 .card2 .title{
-        position: static;
-        width: 50vw;
-        font-size: 60px;
-    }
-    .sec2 .card1{
-        padding: 10px;
-        margin: 0;
-    }
-    .sec2 .card1 p{
-        font-size: 20px;
-    }
-    .sec2 .card2{
-        height: 120px;
-    }
-    .sec2 .card2 .title{
-        height: 80px;
-        bottom: 50px;
     }
     .sec3 .body .discription .title1{
         font-size: 6vw;
@@ -332,13 +295,17 @@
         width: 50%;
     }
     .sec5 .body .cards_member img{
-        width: 100%;
+        height: 100%;
     }
     .sec5 .body .discription{
         width: 90%;
     }
     .sec5 .body .discription .title{
         font-size: 6vw;
+        margin-bottom: 20px;
+    }
+    .sec5 .body .discription p{
+        margin-bottom: 20px;
     }
     .sec5 .body .discription .btn-content2{
         height: 40px;
@@ -432,6 +399,10 @@
     #button_close{
         height: 50px;
     }
+    .sec1 .main .body .text_part .btn-content {
+        font-size: 16px;
+        width: 190px;
+    }
     .sec3 .content main section .img_ini{
         height: 55vw;
         width: 100%;
@@ -445,11 +416,27 @@
     .sec3 .content .sections section .details .title p{
         align-items: center;
     }
+    .sec3 .body .discription .title1{
+        font-size: 25px;
+    }
     .sec3 .body .discription .title2{
-        font-size: 5vw;
+        font-size: 20px;
     }
     .sec3 .body .discription .disc{
-        font-size: 4vw;
+        font-size: 15px;
+    }
+    .sec4 .body .title p{
+        font-size: 25px;
+    }
+    .sec5 .body .discription .title{
+        font-size: 25px;
+    }
+    .sec5 .body .discription p{
+        font-size: 15px;
+    }
+    .sec5 .body .discription .btn-content2 {
+        font-size: 16px;
+        width: 230px;
     }
     footer{
         height: 50px;

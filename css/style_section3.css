@@ -12,7 +12,7 @@
 }
 .sec3 .body .discription{
     width: 450px;
-    height: 512px;
+    height: 550px;
     z-index: 3;
     background-color: #86637a;
     position: relative;
@@ -39,17 +39,19 @@
     position: relative;
 }
 .sec3 .body .discription .title1{
-    font-size: 48px;
+    font-size: 54px;
+    font-family: 'DINNextLTArabic-Bold', sans-serif;
     color: #78d3d6;
     font-weight: 700;
 }
 .sec3 .body .discription .title2{
     padding-top: 10px;
-    font-size: 30px;
+    font-size: 33px;
     color: #fff;
 }
 .sec3 .body .discription .disc{
-    font-size: 16px;
+    font-size: 17px;
+    font-family: 'DINNextLTArabic-Regular', sans-serif;
     color: #fff;
     width: 100%;
     padding: 20px 0;
@@ -112,7 +114,7 @@
 }
 .sec3 .body .slider{
     width: 74%;
-    height: 512px;
+    height: 550px;
     padding: 3vw 20px 3vw 0;
     overflow: hidden;
 }

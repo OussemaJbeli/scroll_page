@@ -63,6 +63,7 @@ nav .body .back_black{
 nav .body ul li{
     margin-right: 5px;
     font-size: 20px;
+    font-family: 'DINNextLTArabic-Medium', sans-serif;
 }
 nav .body ul .list-group-item{
     position: relative;
