@@ -1,305 +1,598 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style_footer.css">
-    <link rel="stylesheet" href="css/style_header.css">
-    <link rel="stylesheet" href="css/style_section1.css">
-    <link rel="stylesheet" href="css/style_section2.css">
-    <link rel="stylesheet" href="css/style_section3.css">
-    <link rel="stylesheet" href="css/style_section4.css">
-    <link rel="stylesheet" href="css/style_section5.css">
-    <link rel="stylesheet" href="css/style_section6.css">
-    <link rel="stylesheet" href="css/style_section7.css">
-    <link rel="stylesheet" href="css/respensive.css">
-    <link rel="stylesheet" href="css/animation.css">
-    <link rel="stylesheet" href="css/main.css">
-    <!-- font -->
-    <link href="https://fonts.cdnfonts.com/css/tajawal" rel="stylesheet">
-    <!-- font awsom -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>modon</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>طلاب</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Poppins:wght@600;700&family=Rubik:wght@400;500&display=swap"
+    rel="stylesheet">
+
+    <!-- {{-- logo --}} -->
+    <link rel="icon" type="icon" href="icon.ico"> 
+
+    <!-- {{-- fontawsom --}} -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <nav id="navbar" class="navbar">
-        <div class="body">        
-            <a href="#sec1" class="logo right_visible"><img src="upload/Groupe 40.svg"></a>
-            <p id="button_open"><i class="fa-solid fa-bars" style="color: #d88d8b;"></i></p>
-            <ul class="up_visible" id="list">
-                <p id="button_close"><i class="fa-solid fa-bars" id="button_close_icon" style="color: #d88d8b;"></i></p>
-                <li><a class="list-group-item list-group-item-action active" id="side_button1" data-toggle="list" href="#sec1">الرئيسية</a></li>
-                <li><a class="list-group-item list-group-item-action " id="side_button2" data-toggle="list" href="#sec2">عن الجمعية</a></li>
-                <li><a class="list-group-item list-group-item-action " id="side_button3" data-toggle="list" href="#sec3">البرامج</a></li>
-                <li><a class="list-group-item list-group-item-action " id="side_button4" data-toggle="list" href="#sec4">المركز الإعلامي </a></li>
-                <li><a class="list-group-item list-group-item-action " id="side_button5" data-toggle="list" href="#sec5">العضوية</a></li>
-                <li><a class="list-group-item list-group-item-action " id="side_button6" data-toggle="list" href="#sec7">اتصل بنا</a></li>
-            </ul>
-            <div class="back_black" id="back_black"></div>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        طلاب
+        <span class="tolab-icon"><i class="fa-solid fa-graduation-cap fa-lg"></i></span>
+      </a>
+
+      <button class="menu-open-btn" data-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="menu-close-btn" data-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          طلاب
+          <span class="tolab-icon"><i class="fa-solid fa-graduation-cap fa-lg"></i></span>
+        </a>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#hero" class="navbar-link">الرئيسية</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">من نحن؟</a>
+          </li>
+
+          <li>
+            <a href="#departments" class="navbar-link">محتوانا            </a>
+          </li>
+
+          <li>
+            <a href="#payment" class="navbar-link">عروضنا            </a>
+          </li>
+
+          <li>
+            <a href="#footer" class="navbar-link">تواصل معنا</a>
+          </li>
+
+        </ul>
+
+        <div class="buttons">
+          <button class="btn btn-secondary">تسجيل الدخول</button>
+          <button class="btn btn-secondary2">انضم الينا</button>
         </div>
-    </nav>
-    <section class="sec1" id="sec1">
-        <div class="main">
-            <div class="body">
-                <div class="text_part">
-                    <p class="title1 up_visible">جمعية التخطيط</p>
-                    <p class="title2 up_visible">وتطوير المدن </p>
-                    <p class="title3 up_visible">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص</p>
-                    <div class="btn-conteiner">
-                        <a class="btn-content" href="#">
-                          <span class="btn-title">اقرأ المزيد </span>
-                          <span class="icon-arrow">
-                            <svg viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                              <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <path id="arrow-icon-one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                                <path id="arrow-icon-two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                                <path id="arrow-icon-three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
-                              </g>
-                            </svg>
-                          </span> 
-                        </a>
-                    </div>
-                </div>
-            </div>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="hero">
+        <div class="container">
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" alt="A young lady sits, holding a pen and a notebook.">
+          </figure>
+
+          <div class="hero-content">
+
+            <h2 class="h2 hero-title">
+              <p>طلاب</p>
+              المنصّة التعليميّة الأولى
+              عبر الإنترنت في الامارات
+            </h3>
+            <p class="section-text">
+              تمتع الآن بدروس دعم عبر الإنترنت في جميع المواد وعلى مختلف المستويات (الابتدائي والأساسي والثانوي)، ابتداءً من السنة الرابعة ابتدائي إلى البكالوريا
+            </p>
+
+            <button class="btn btn-primary">ابدأ الآن</button>
+
+          </div>
+
         </div>
-    </section>
-    <section class="sec2" id="sec2">
-        <div class="body up_animatedElement up_hidden">
-            <div class="cards">
-                <div class="card"></div>
-            </div>
-            <div class="cards">
-                <div class="card"></div>
-            </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/about-banner.png" alt="Eduland students" class="about-img">
+
+            <img src="./assets/images/about-vector.svg" alt="Vector line art" class="vector-line">
+
+            <button class="play-btn">
+              <ion-icon name="play"></ion-icon>
+            </button>
+
+          </figure>
+
+          <div class="about-content">
+
+            <h2 class="h2 about-title">ماهي منصّة طلاب ؟</h2>
+
+            <p class="section-text">
+              طلاب هي أوّل منصّة تعليميّة عبر الإنترنت في الامارات موجّهة لتلامذة الابتدائي والأساسي والثّانوي، نقدّم دروس دعم في شكل فيديوهات مسجّلة لشرح كلّ دروس البرنامج الدّراسي تحت إشراف ثلّة من الأساتذة والمربّين من ذوي الخبرة من كامل أنحاء الجمهورية.
+            </p>
+            
+            <button class="btn btn-primary">ابدأ الآن</button>
+
+          </div>
+
         </div>
-    </section>
-    <section class="sec3" id="sec3">
-        <div class="body">
-            <div class="discription" id="discription">
-                <div class="title1">أبرز المواضيع </div>
-                <div class="slide_discription">
-                    <div class="under_disc disc1" id="disc1">
-                        <div class="title2">عنوان الخبر هنا بحجم كامل 1</div>
-                        <div class="disc">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى 
-                            المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل 
-                            الخارجي للنص أو شكل توضع الفقرات في الصفحة التي 
-                            يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها 
-                            تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن 
-                            استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى ني" 
-                        </div>
-                    </div>
-                    <div class="under_disc disc2" id="disc2">
-                        <div class="title2">عنوان الخبر هنا بحجم كامل 2</div>
-                        <div class="disc">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى 
-                            المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل 
-                            الخارجي للنص أو شكل توضع الفقرات في الصفحة التي 
-                            يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها 
-                            تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن 
-                            استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى ني" 
-                        </div>
-                    </div>
-                    <div class="under_disc disc3" id="disc3">
-                        <div class="title2">عنوان الخبر هنا بحجم كامل 3</div>
-                        <div class="disc">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى 
-                            المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل 
-                            الخارجي للنص أو شكل توضع الفقرات في الصفحة التي 
-                            يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها 
-                            تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن 
-                            استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى ني" 
-                        </div>
-                    </div>
-                    <div class="under_disc disc4" id="disc4">
-                        <div class="title2">عنوان الخبر هنا بحجم كامل 4</div>
-                        <div class="disc">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى 
-                            المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل 
-                            الخارجي للنص أو شكل توضع الفقرات في الصفحة التي 
-                            يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها 
-                            تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن 
-                            استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى ني" 
-                        </div>
-                    </div>
-                    <div class="under_disc disc5" id="disc5">
-                        <div class="title2">عنوان الخبر هنا بحجم كامل 5</div>
-                        <div class="disc">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى 
-                            المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل 
-                            الخارجي للنص أو شكل توضع الفقرات في الصفحة التي 
-                            يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها 
-                            تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن 
-                            استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى ني" 
-                        </div>
-                    </div>
-                </div>
-                <div class="buttons">
-                    <div class="button">
-                        <div class="right_but" onclick="nextSlide()"></div>
-                        <div class="left_but" onclick="prevSlide()"></div>
-                    </div>
-                </div>
-                <div class="icon1"></div>
-                <div class="icon2"></div>
-            </div>
-            <div class="slider">
-                <div class="slider-container">
-                    <div class="slider-wrapper" id="sliderWrapper">
-                        <div class="slider-item" id="slider-item1" onmouseover="pauseAutoSlide()" onmouseout="resumeAutoSlide()"><img src="upload/scrolle_imgs1.png" alt=""></div>
-                        <div class="slider-item" id="slider-item2" onmouseover="pauseAutoSlide()" onmouseout="resumeAutoSlide()"><img src="upload/scrolle_imgs2.png" alt=""></div>
-                        <div class="slider-item" id="slider-item3" onmouseover="pauseAutoSlide()" onmouseout="resumeAutoSlide()"><img src="upload/scrolle_imgs3.png" alt=""></div>
-                        <div class="slider-item" id="slider-item4" onmouseover="pauseAutoSlide()" onmouseout="resumeAutoSlide()"><img src="upload/scrolle_imgs4.png" alt=""></div>
-                        <div class="slider-item" id="slider-item5" onmouseover="pauseAutoSlide()" onmouseout="resumeAutoSlide()"><img src="upload/scrolle_imgs5.png" alt=""></div>
-                    </div>
-                </div>
-            </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #DEPARTMENTS
+      -->
+
+      <section class="departments" id="departments">
+        <div class="container">
+
+          <img src="./assets/images/departmets-vector.svg" alt="Vector line art" class="vector-line">
+
+          <h2 class="h2 departments-title">ماذا نقدّم ؟</h2>
+
+          <ul class="departments-list">
+
+            <li>
+              <div class="departments-card">
+
+                <a href="#" class="card-banner">
+                  <figure>
+                    <img src="./assets/images/depertment-1.png" alt="Artificial Intelligence">
+                  </figure>
+                </a>
+
+                <p class="card-text">
+                  فيديوهات تفسير الدروس
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="departments-card">
+
+                <a href="#" class="card-banner">
+                  <figure>
+                    <img src="./assets/images/depertment-2.png" alt="Civil Engineering">
+                  </figure>
+                </a>
+                <p class="card-text">
+                  تلاخيص الدروس
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="departments-card">
+
+                <a href="#" class="card-banner">
+                  <figure>
+                    <img src="./assets/images/depertment-3.png" alt="Business Studies">
+                  </figure>
+                </a>
+
+                <p class="card-text">
+                  تمارين مرفقة بالإصلاح
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-primary">ابدأ الآن</button>
+
         </div>
-    </section>
-    <section class="sec4" id="sec4">
-        <div class="body">
-            <div class="title up_animatedElement up_hidden">
-                <p>شـــــركاؤنـــا</p>
-            </div>
-            <div class="cards_pack">
-                <div class="card up_animatedElement up_hidden">
-                    <div class="card1"></div>
-                </div>
-                <div class="card up_animatedElement up_hidden">
-                    <div class="card2"></div>
-                </div> 
-                <div class="card up_animatedElement up_hidden">
-                    <div class="card3"></div>
-                </div> 
-                <div class="card up_animatedElement up_hidden">
-                    <div class="card4"></div>
-                </div> 
-                <div class="card up_animatedElement up_hidden">
-                    <div class="card5"></div>
-                </div> 
-                <div class="card up_animatedElement up_hidden">
-                    <div class="card6"></div>
-                </div> 
-            </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #INSTRUCTOR
+      -->
+
+      <section class="instructor" class="id">
+        <div class="container">
+
+          <img src="./assets/images/instructor-vactor-1.svg" alt="Vector line art" class="vector-line">
+
+          <div class="title-wrapper">
+            <h2 class="h3 instructor-title">من يمكنه الاستفادة من منصّة طلاب</h2>
+
+            <button class="btn btn-primary">ابدأ الآن</button>
+
+          </div>
+
+          <ul class="instructor-list">
+
+            <li>
+              <div class="instructor-card">
+
+                <figure class="card-banner card-banner2">
+                  <img src="./assets/images/master.png" alt="Sellina">
+                </figure>
+
+                <a href="#">
+                  <h3 class="card-title">الاساتذة/المعلمين</h3>
+                </a>
+
+                <p class="card-subtitle">ابق على تواصل دائم مع تلامذتك وانقل نشاطك التعليميّ إلى المنصّة لتساهم في تقديم أفضل بيئة تعليميّة رقميّة للتلاميذ</p>
+
+
+              </div>
+            </li>
+
+            <li>
+              <div class="instructor-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/student.png" alt="John Smith">
+                </figure>
+
+                <a href="#">
+                  <h3 class="card-title">التلاميذ/الطلبة</h3>
+                </a>
+
+                <p class="card-subtitle">ابدأ مراجعتك وتمتّع بأفضل محتوى دعم عن بعد و ابق على تواصل مع أساتذتك و معلّميك في المنصّة دون تكاليف باهظة</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/instructor-vactor-2.svg" alt="Vector line art" class="vector-line">
+
         </div>
-    </section>
-    <section class="sec5" id="sec5">
-        <div class="body">
-            <div class="discription up_animatedElement up_hidden">
-                <div class="title">
-                    العضويــــة
-                </div>
-                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة                </p>
-                <div class="btn-conteiner">
-                    <a class="btn-content2" href="#">
-                      <span class="btn-title">طلب اشتراك بالعضوية</span>
-                      <span class="icon-arrow">
-                        <svg viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <path id="arrow-icon-one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                            <path id="arrow-icon-two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                            <path id="arrow-icon-three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
-                          </g>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta">
+        <div class="container">
+
+          <div class="title-wrapper">
+
+            <h2 class="h2 cta-title">
+              <span>ابدأ طريقك نحو النجاح</span>
+
+              <img src="./assets/images/cta-vector.svg" alt="Vector arrow art" class="vector-line">
+            </h2>
+
+            <button class="btn btn-primary">ابدأ الآن</button>
+
+          </div>
+
+          <div class="cta-banner"></div>
+
+        </div>
+      </section>
+
+            <!-- 
+        - #DEPARTMENTS
+      -->
+
+      <section class="departments" id="payment">
+        <div class="container">
+
+          <img src="./assets/images/departmets-vector.svg" alt="Vector line art" class="vector-line">
+
+          <h2 class="h3 departments-title">تمتّع بأفضل محتوى تعليمي وبدعم متواصل طيلة السّنة الدراسية من خلال مختلف عروضنا.</h2>
+
+          <ul class="departments-list">
+
+            <li>
+              <div class="plan">
+                <div class="inner">
+                  <span class="pricing">
+                    <span>
+                      $49 <small>/ m</small>
+                    </span>
+                  </span>
+                  <p class="title">Professional</p>
+                  <p class="info">This plan is for those who have a team already and running a large business.</p>
+                  <ul class="features">
+                    <li>
+                      <span class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
                         </svg>
-                      </span> 
-                    </a>
+                      </span>
+                      <span><strong>20</strong> team members</span>
+                    </li>
+                    <li>
+                      <span class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                        </svg>
+                      </span>
+                      <span>Plan <strong>team meetings</strong></span>
+                    </li>
+                    <li>
+                      <span class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                        </svg>
+                      </span>
+                      <span>File sharing</span>
+                    </li>
+                  </ul>
+                  <div class="action">
+                  <a class="button" href="#">
+                    Choose plan
+                  </a>
+                  </div>
                 </div>
-            </div>
-            <div class="cards_member up_animatedElement up_hidden">
-                <img src="upload/Groupe 61.png">
-            </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="plan">
+                <div class="inner">
+                  <span class="pricing">
+                    <span>
+                      $49 <small>/ m</small>
+                    </span>
+                  </span>
+                  <p class="title">Professional</p>
+                  <p class="info">This plan is for those who have a team already and running a large business.</p>
+                  <ul class="features">
+                    <li>
+                      <span class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                        </svg>
+                      </span>
+                      <span><strong>20</strong> team members</span>
+                    </li>
+                    <li>
+                      <span class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                        </svg>
+                      </span>
+                      <span>Plan <strong>team meetings</strong></span>
+                    </li>
+                    <li>
+                      <span class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                        </svg>
+                      </span>
+                      <span>File sharing</span>
+                    </li>
+                  </ul>
+                  <div class="action">
+                  <a class="button" href="#">
+                    Choose plan
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="plan">
+                <div class="inner">
+                  <span class="pricing">
+                    <span>
+                      $49 <small>/ m</small>
+                    </span>
+                  </span>
+                  <p class="title">Professional</p>
+                  <p class="info">This plan is for those who have a team already and running a large business.</p>
+                  <ul class="features">
+                    <li>
+                      <span class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                        </svg>
+                      </span>
+                      <span><strong>20</strong> team members</span>
+                    </li>
+                    <li>
+                      <span class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                        </svg>
+                      </span>
+                      <span>Plan <strong>team meetings</strong></span>
+                    </li>
+                    <li>
+                      <span class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                        </svg>
+                      </span>
+                      <span>File sharing</span>
+                    </li>
+                  </ul>
+                  <div class="action">
+                  <a class="button" href="#">
+                    Choose plan
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-primary">ابدأ الآن</button>
+
         </div>
-    </section>
-    <section class="sec6" id="sec6">
-        <div class="body">
-            <div class="first_part  up_animatedElement up_hidden" id="numbers_panel">
-                <div class="card1 card_des">
-                    <div class="icon"></div>
-                    <div class="card_desc">
-                        <div class="number" id="number1">200</div>
-                        <div class="desc">عضوية</div>
-                    </div>
-                </div>
-                <div class="card2 card_des">
-                    <div class="icon"></div>
-                    <div class="card_desc">
-                        <div class="number" id="number2">140</div>
-                        <div class="desc">مشروع</div>
-                    </div>
-                </div>
-                <div class="card3 card_des">
-                    <div class="icon"></div>
-                    <div class="card_desc">
-                        <div class="number" id="number3">99</div>
-                        <div class="desc">انجازات</div>
-                    </div>
-                </div>
-            </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            طلاب
+            <span class="tolab-icon"><i class="fa-solid fa-graduation-cap fa-lg"></i></span>
+          </a>
+
+          <p class="footer-text">
+            ابدأ طريقك نحو النجاح          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-google"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
         </div>
-    </section> 
-    <section class="sec7" id="sec7">
-        <div class="body">
-            <div class="second_part">
-                <div class="card1 card_des  up_animatedElement up_hidden">
-                    <img class="title" src="upload/Groupe 20.svg">
-                    <div class="desc">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة  لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها.هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة  لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح</div>
-                </div>
-                <div class="card2 card_des  up_animatedElement up_hidden">
-                    <div class="title">روابط تهمك</div>
-                    <div class="desc">
-                        <ul>
-                            <li><p>الرئيسية</p></li>
-                            <li><p>عن الجمعية</p></li>
-                            <li><p>البرامج</p></li>
-                            <li><p>العضوية</p></li>
-                            <li><p>سياسة الخصوصية</p></li>
-                        </ul>
-                        <ul>
-                            <li><p>المركز الإعلامي</p></li>
-                            <li><p>اتصل بنا</p></li>
-                            <li><p>الأحكام والشروط</p></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card3 card_des  up_animatedElement up_hidden">
-                    <div class="title">اشترك في القائمة البريدية</div>
-                    <div class="desc1">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة                    </div>
-                    <div class="send">
-                        <input type="email" class="desc2" placeholder="اضف بريدك الالكتروني للتسجيل">
-                        <div class="desc3">
-                            <button>
-                                <span>اشتراك</span>
-                                <div class="svg-wrapper-1">
-                                  <div class="svg-wrapper">
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      viewBox="0 0 24 24"
-                                      width="24"
-                                      height="24"
-                                    >
-                                      <path fill="none" d="M0 0h24v24H0z"></path>
-                                      <path
-                                        fill="currentColor"
-                                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                                      ></path>
-                                    </svg>
-                                  </div>
-                                </div>
-                            </button>                              
-                            <div class="links">
-                                <a href="" class="icon1 icon"></a>
-                                <a href="" class="icon3 icon"></a>
-                                <a href="" class="icon2 icon"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer id="footer">
-        <div class="body"> 
-            جميع الحقوق محفوظة 2024&copy;
-        </div>
-    </footer>
-    <!-- //script -->
-    <script src="js/slider.js"></script>
-    <script src="js/animation.js"></script>
-    <script src="js/respensive.js"></script>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2024 <a href="">طلاب</a>.  
+          جميع الحقوق محفوظة
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
