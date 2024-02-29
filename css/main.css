@@ -547,6 +547,10 @@ button:focus {
       color: #fff;
       font-size: 18px;
       line-height: 26px; }
+      .hero-area .contents .sub_title {
+        display: flex;
+        flex-direction: row;
+      }
       .hero-area .contents .sub_title .multitext {
         color: var(--key_color);
         font-weight: 600;
