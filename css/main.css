@@ -13,12 +13,19 @@ Domain Path:      /languages/
 /* ==========================================================================
    GENERAL
    ========================================================================== */
+:root{
+  --back_gruond1 : #15122c ;
+  --back_gruond2 : #2a3347;
+  --card_gruond2 : #1c2435;
+  --key_color:#ffc502;
+  --graduant_bg:linear-gradient(95deg, #2a3347 40%, #15122c 100%);
+}
 body {
   font-family: 'Rubik', sans-serif;
   color: #a0a6ad;
   font-size: 14px;
   font-weight: 400;
-  background: #fff;
+  background: var(--back_gruond1);
   overflow-x: hidden; }
 
 html {
@@ -26,7 +33,7 @@ html {
 
 p {
   font-size: 14px;
-  color: #5e629c;
+  color: #ffffff;
   line-height: 26px;
   margin-bottom: 0; }
 
@@ -44,7 +51,7 @@ h1, h2, h3, h4, h5 {
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
   font-weight: 400;
-  color: #151948; }
+  color: var(--key_color); }
 
 ul {
   margin: 0;
@@ -95,7 +102,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 .section-header .desc-text p {
   font-size: 18px;
-  color: #5e629c;
+  color: #ffffff;
   line-height: 26px;
   margin-bottom: 0; }
 
@@ -124,7 +131,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   outline: none; }
 
 .btn-common {
-  background-color: #3ecf8e;
+  background-color: var(--key_color);
   position: relative;
   z-index: 1;
   box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
@@ -144,8 +151,8 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   border-width: 1px;
   cursor: pointer;
   background-color: transparent;
-  border-color: #3ecf8e;
-  color: #3ecf8e;
+  border-color: var(--key_color);
+  color: var(--key_color);
   width: 160px;
   height: 50px;
   padding: 14px 15px; }
@@ -156,8 +163,8 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 .btn-border-filled {
   cursor: pointer;
-  background-color: #3ecf8e;
-  border: 1px solid #3ecf8e;
+  background-color: var(--key_color);
+  border: 1px solid var(--key_color);
   color: #fff;
   box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
   width: 180px;
@@ -185,17 +192,36 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   vertical-align: middle; }
 
 .btn-singin {
-  background: #7fc9fb;
-  color: #fff;
-  padding: 10px 23px;
-  margin-left: 30px;
-  box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17); }
-
+    background: var(--key_color);
+    color: #fff;
+    padding: 7px 15px;
+    margin-left: 30px;
+    border: 2.5px solid var(--key_color);
+}
+  
 .btn-singin:hover,
 .btn-singin:active,
 .btn-singin:focus {
-  color: #fff;
-  box-shadow: 0px 0px 0px 0px rgba(96, 94, 94, 0.17); }
+    color: var(--key_color);
+    border: 2.5px solid var(--key_color);
+    background-color: transparent;
+}
+
+.btn-singup {
+    background: transparent;
+    color: #fff;
+    padding: 7px 15px;
+    margin-left: 30px;
+    border: 2.5px solid #fff;
+}
+    
+.btn-singup:hover,
+.btn-singup:active,
+.btn-singup:focus {
+  color: var(--key_color);
+  border: 2.5px solid var(--key_color);
+  background-color: transparent;
+}
 
 .btn-light-singin:hover,
 .btn-light-singin:active,
@@ -349,7 +375,7 @@ button:focus {
   text-align: center;
   border-radius: 4px;
   background: #5533ff;
-  background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+  background: var(--graduant_bg);
   box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
   z-index: 9999999; }
 
@@ -370,7 +396,7 @@ button:focus {
 
 .menu-bg {
   background: #5533ff;
-  background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%) !important;
+  background: var(--graduant_bg) !important;
   box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
   z-index: 9999;
   padding: 5px;
@@ -422,7 +448,19 @@ button:focus {
   width: 100%; }
 
 .navbar-brand {
-  color: #fff; }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+}
+.navbar-brand  span{
+  color: var(--key_color);
+  font-size: 25px;
+}
+.navbar-brand  p{
+  color: #ffffff;
+  font-size: 25px;
+}
 
 .navbar-expand-md .navbar-nav .nav-link:focus,
 .navbar-expand-md .navbar-nav .nav-link:hover,
@@ -461,8 +499,8 @@ button:focus {
     height: 100%;
     top: 0px;
     left: 0px;
-    background: #5533ff;
-    background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+    background: var(--back_gruond2);
+    background: var(--graduant_bg);
     -webkit-transform: skewY(-12deg);
     transform: skewY(-12deg);
     -webkit-transform-origin: 0;
@@ -475,22 +513,22 @@ button:focus {
       left: 16.66666%;
       left: calc(calc(100% / 3) / 2);
       right: auto;
-      background: #5533ff;
-      background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+      background: var(--back_gruond2);
+      background: var(--graduant_bg);
       height: 200px; }
     .hero-area .overlay :nth-child(2) {
       width: 33.33333%;
       width: calc(100% /3);
       bottom: 0;
-      background: #5533ff;
-      background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+      background: var(--back_gruond2);
+      background: var(--graduant_bg);
       position: absolute;
       height: 155px;
       left: 3%; }
   .hero-area .contents {
     padding: 220px 0; }
     .hero-area .contents h2 {
-      color: #fff;
+      color: #ffffff;
       font-size: 38px;
       font-weight: 600;
       line-height: 60px;
@@ -499,6 +537,12 @@ button:focus {
       color: #fff;
       font-size: 18px;
       line-height: 26px; }
+    .hero-area .contents .multitext {
+        color: var(--key_color);
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 60px;
+        margin-bottom: 20px; }
     .hero-area .contents .btn {
       margin-top: 40px;
       margin-right: 20px;
@@ -508,7 +552,7 @@ button:focus {
       padding: 15px 15px; }
     .hero-area .contents .btn-border {
       border: 1px solid #fff;
-      color: #3ecf8e !important;
+      color: var(--key_color) !important;
       -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
       box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
       width: 180px;
@@ -517,7 +561,7 @@ button:focus {
       background: #fff; }
       .hero-area .contents .btn-border:hover {
         background: #fff;
-        color: #3ecf8e; }
+        color: var(--key_color); }
   .hero-area .intro-img {
     padding: 180px 0 0px; }
     .hero-area .intro-img img {
@@ -533,15 +577,16 @@ button:focus {
   border: 1px solid #ddd;
   -moz-transition: all .8s ease;
   -webkit-transition: all .8s ease;
+  background-color: var(--card_gruond2);
   transition: all .8s ease; }
   #services .services-item:hover {
-    border: 1px solid #3ecf8e;
+    border: 1px solid var(--key_color);
     box-shadow: 0px 0px 25px 0px rgba(95, 95, 95, 0.24);
     -moz-transition: all .4s ease;
     -webkit-transition: all .4s ease;
     transition: all .4s ease; }
   #services .services-item .icon {
-    background: #e3fff2;
+    background: var(--back_gruond1);
     width: 110px;
     height: 110px;
     margin: 0px auto;
@@ -553,7 +598,7 @@ button:focus {
     margin-bottom: 25px; }
   #services .services-item .icon i {
     font-size: 40px;
-    color: #3ecf8e;
+    color: var(--key_color);
     position: absolute;
     left: 0;
     right: 0;
@@ -561,12 +606,12 @@ button:focus {
   #services .services-item h4 {
     font-size: 20px;
     font-weight: 600;
-    color: #151948;
+    color: var(--key_color);
     margin-bottom: 15px; }
   #services .services-item p {
     font-size: 16px;
     margin-bottom: 10px;
-    color: #5e629c; }
+    color: #fff; }
 
 /* ==========================================================================
    business-plan Section 
@@ -581,18 +626,20 @@ button:focus {
     #business-plan .business-item-info h3 {
       font-size: 35px;
       font-weight: 600;
-      margin-bottom: 25px; }
+      margin-bottom: 25px; 
+      color: var(--key_color);}
     #business-plan .business-item-info p {
       font-size: 16px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px; 
+      color: #fff;}
 
 /* ==========================================================================
    Features 
    ========================================================================== */
 #features {
-  background: #f9f9f9; }
+  background: var(--back_gruond2); }
   #features .featured-bg {
-    background: #fff; }
+    background: var(--card_gruond2); }
   #features .featured-border1 {
     border-bottom: 1px solid #ededed;
     border-right: 1px solid #ededed; }
@@ -607,7 +654,7 @@ button:focus {
     -webkit-transition: all .8s ease;
     transition: all .8s ease; }
     #features .feature-item .feature-icon {
-      background: #e3fff2;
+      background: var(--back_gruond1);
       width: 100px;
       height: 100px;
       margin: 0px auto;
@@ -621,11 +668,11 @@ button:focus {
       border-radius: 50%;
       position: relative;
       margin-right: 30px;
-      border: 1px solid #3ecf8e;
+      border: 1px solid var(--key_color);
       margin-top: 12px; }
       #features .feature-item .feature-icon i {
         font-size: 40px;
-        color: #3ecf8e;
+        color: var(--key_color);
         position: absolute;
         left: 0;
         right: 0;
@@ -643,7 +690,7 @@ button:focus {
       -webkit-transition: all .8s ease;
       transition: all .8s ease; }
     #features .feature-item:hover .feature-icon {
-      background: #3ecf8e;
+      background: var(--key_color);
       -moz-transition: all .8s ease;
       -webkit-transition: all .8s ease;
       transition: all .8s ease; }
@@ -707,7 +754,7 @@ button:focus {
       top: 18px; }
     #download-app .download-info .downlaod-btn a.ios-store {
       border: 1px solid #ff704f;
-      color: #151948;
+      color: #fff;
       font-size: 12px;
       box-shadow: 0px 10px 20px 2px rgba(255, 112, 79, 0.24);
       border-radius: 35px;
@@ -738,7 +785,7 @@ button:focus {
       -o-transition: all 0.8s ease-in-out;
       transition: all 0.8s ease-in-out; }
   #download-app .download-statatics h3 {
-    color: #151948;
+    color: var(--key_color);
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 0px; }
@@ -760,17 +807,16 @@ button:focus {
     top: 260px;
     margin: 0px auto; }
   #showcase .showcase-text h2 {
-    color: #fff; }
+    color: var(--key_color); }
   #showcase .showcase-text p {
     color: #fff; }
   #showcase .gradient-bg {
-    background: #5533ff;
-    background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+    background: var(--back_gruond2);
     padding: 119px 0px 80px 0px; }
   #showcase .showcase-slider .owl-controls .owl-page.active span, #showcase .showcase-slider .owl-controls.clickable .owl-page:hover span {
     filter: Alpha(Opacity=100);
     opacity: 1;
-    background: #3ecf8e; }
+    background: var(--key_color); }
   #showcase .showcase-slider .owl-controls .owl-page span {
     display: block;
     width: 12px;
@@ -781,7 +827,7 @@ button:focus {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
-    background: #3ecf8e; }
+    background: var(--key_color); }
   #showcase .showcase-slider .owl-controls .active span {
     width: 15px;
     height: 15px; }
@@ -814,7 +860,7 @@ button:focus {
       color: #fff;
       font-size: 20px; }
   #showcase .showcase-slider .screenshot-thumb > .hover-content {
-    background-color: #3ecf8e;
+    background-color: var(--key_color);
     opacity: 0.90;
     height: 85%;
     left: 0;
@@ -853,7 +899,7 @@ button:focus {
     top: 260px;
     margin: 0px auto; }
   #testimonial #client-testimonial {
-    background-color: #fff;
+    background-color: var(--card_gruond2);
     padding: 54px;
     -webkit-box-shadow: 0px 0px 25px 0px rgba(95, 95, 95, 0.24);
     -moz-box-shadow: 0px 0px 25px 0px rgba(95, 95, 95, 0.24);
@@ -874,10 +920,10 @@ button:focus {
       color: #5e629c;
       font-style: italic; }
     #testimonial #client-testimonial .owl-controls .owl-buttons div.owl-prev {
-      color: #3ecf8e;
+      color: var(--key_color);
       display: inline-block;
       zoom: 1;
-      *display: inline;
+      display: inline;
       margin: 5px;
       font-size: 16px;
       -webkit-border-radius: 30px;
@@ -894,10 +940,10 @@ button:focus {
       height: 38px;
       padding: 8px 0px; }
     #testimonial #client-testimonial .owl-controls .owl-buttons div.owl-next {
-      color: #3ecf8e;
+      color: var(--key_color);
       display: inline-block;
       zoom: 1;
-      *display: inline;
+      display: inline;
       margin: 5px;
       font-size: 16px;
       -webkit-border-radius: 30px;
@@ -915,8 +961,8 @@ button:focus {
       padding: 8px 0px; }
     #testimonial #client-testimonial .owl-controls .owl-buttons div.owl-prev:hover, #testimonial #client-testimonial .owl-controls .owl-buttons div.owl-next:hover {
       color: #fff;
-      background: #3ecf8e;
-      border-color: #3ecf8e; }
+      background: var(--key_color);
+      border-color: var(--key_color); }
   #testimonial .video-promo-content {
     padding-top: 0;
     padding-bottom: 300px; }
@@ -973,7 +1019,7 @@ button:focus {
     z-index: 3;
     width: 0;
     height: 0;
-    border-left: 22px solid #3ecf8e;
+    border-left: 22px solid var(--key_color);
     border-top: 14px solid transparent;
     border-bottom: 14px solid transparent;
     border-radius: 2px;
@@ -993,18 +1039,19 @@ button:focus {
    ========================================================================== */
 #pricing .pricing-table {
   padding: 55px;
+  background-color: var(--card_gruond2);
   border: 1px solid #ccc;
   -moz-transition: all .8s ease;
   -webkit-transition: all .8s ease;
   transition: all .8s ease; }
   #pricing .pricing-table h3 {
     font-size: 20px;
-    color: #151948;
+    color: #fff;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 11px; }
   #pricing .pricing-table h1 {
-    color: #3ecf8e;
+    color: var(--key_color);
     font-size: 50px;
     font-weight: 500;
     position: relative;
@@ -1019,11 +1066,11 @@ button:focus {
   #pricing .pricing-table ul li {
     font-size: 16px;
     font-weight: 400;
-    color: #5e629c;
+    color: #ffffff;
     display: block;
     line-height: 33px; }
   #pricing .pricing-table:hover {
-    border: 1px solid #3ecf8e;
+    border: 1px solid var(--key_color);
     box-shadow: 0px 0px 25px 0px rgba(95, 95, 95, 0.24);
     -moz-transition: all .4s ease;
     -webkit-transition: all .4s ease;
@@ -1055,12 +1102,12 @@ button:focus {
       padding: 5px;
       line-height: 30px;
       margin: 4px;
-      background: #fff; }
+      background: var(--card_gruond2); }
     #team .single-team .team-social-icons ul.social-list li:hover {
-      background: #3ecf8e;
+      background: var(--key_color);
       -moz-transition: all .4s ease;
       -webkit-transition: all .4s ease;
-      border-color: #3ecf8e;
+      border-color: var(--key_color);
       transition: all .4s ease; }
     #team .single-team .team-social-icons ul.social-list li:hover a {
       display: block; }
@@ -1070,7 +1117,7 @@ button:focus {
       -webkit-transition: all .4s ease;
       transition: all .4s ease; }
     #team .single-team .team-social-icons ul.social-list li a i {
-      color: #3ecf8e;
+      color: var(--key_color);
       font-size: 16px; }
   #team .single-team:hover {
     box-shadow: 0px 0px 25px 0px rgba(95, 95, 95, 0.24);
@@ -1087,7 +1134,7 @@ button:focus {
       margin-bottom: 0; }
     #team .single-team .team-details p {
       font-size: 12px;
-      color: #5e629c; }
+      color: var(--key_color); }
 
 /* ==========================================================================
    Blog section
@@ -1104,10 +1151,10 @@ button:focus {
   padding: 160px 0 140px; }
 
 #blog {
-  background: #f9f9f9; }
+  background: var(--back_gruond2); }
   #blog .blog-item-wrapper {
     border: 1px solid #ddd;
-    background-color: #fff;
+    background-color: var(--card_gruond2);
     -moz-transition: all .8s ease;
     -webkit-transition: all .8s ease;
     transition: all .8s ease; }
@@ -1116,9 +1163,9 @@ button:focus {
       -moz-transition: all .8s ease;
       -webkit-transition: all .8s ease;
       transition: all .8s ease;
-      border-color: #3ecf8e; }
+      border-color: var(--key_color); }
     #blog .blog-item-wrapper:hover h3 a {
-      color: #3ecf8e; }
+      color: var(--key_color); }
     #blog .blog-item-wrapper .blog-item-text {
       padding: 26px 30px 30px 30px; }
     #blog .blog-item-wrapper h3 {
@@ -1127,19 +1174,19 @@ button:focus {
       line-height: 28px;
       margin-bottom: 12px; }
     #blog .blog-item-wrapper h3 a {
-      color: #151948; }
+      color: #ffffff; }
     #blog .blog-item-wrapper p {
       font-size: 15px;
       line-height: 23px;
       margin-bottom: 20px; }
     #blog .blog-item-wrapper a.read-more {
-      color: #3ecf8e;
+      color: var(--key_color);
       font-size: 14px;
       text-transform: uppercase;
       font-weight: 500;
       position: relative; }
     #blog .blog-item-wrapper a.read-more i {
-      color: #3ecf8e;
+      color: var(--key_color);
       font-size: 10px;
       position: absolute;
       top: 3px; }
@@ -1147,16 +1194,16 @@ button:focus {
       border-top: 1px solid #ddd;
       padding: 18px 30px 35px 30px; }
     #blog .blog-item-wrapper span.name a {
-      color: #5e629c;
+      color: #ffffff;
       font-size: 14px; }
     #blog .blog-item-wrapper span.name i {
-      color: #3ecf8e;
+      color: var(--key_color);
       margin-right: 5px; }
     #blog .blog-item-wrapper span.date a {
-      color: #5e629c;
+      color: #ffffff;
       font-size: 14px; }
     #blog .blog-item-wrapper span.date i {
-      color: #3ecf8e;
+      color: var(--key_color);
       margin-right: 5px; }
 
 /* ==========================================================================
@@ -1384,7 +1431,7 @@ button:focus {
   color: #5e629c; }
 
 #contact form#contactForm .form-control:focus {
-  border: 1px solid #3ecf8e;
+  border: 1px solid var(--key_color);
   outline: none;
   box-shadow: none;
   background: #e5fff3; }
@@ -1395,19 +1442,31 @@ button:focus {
 #footer-Content {
   padding-top: 130px;
   background: #180e29; }
-  #footer-Content .footer-logo img {
-    padding-top: 70px; }
-  #footer-Content .form-control:focus {
-    outline: none;
-    box-shadow: none;
-    background: #e5fff3; }
+  #footer-Content  .footer_Subcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 900;
+  }
+  #footer-Content  .footer_Subcontent h1{
+    font-size: 50px;
+    text-align: center;
+  }
+  #footer-Content  .footer_Subcontent p{
+    font-size: 25px;
+    text-align: center;
+    color: #ebebeb;
+  }
+  #footer-Content  .footer_Subcontent .title_footer{
+    margin-bottom: 50px;
+  }
   #footer-Content .copyright {
     margin-top: 125px;
     border-top: 1px solid #3c1f6e;
     padding-top: 30px;
     padding-bottom: 30px; }
     #footer-Content .copyright p {
-      color: #3ecf8e;
+      color: var(--key_color);
       font-size: 18px; }
     #footer-Content .copyright a {
       color: #ddd; }
@@ -1433,7 +1492,7 @@ button:focus {
       height: 38px;
       color: #fff;
       top: 0;
-      background: #3ecf8e;
+      background: var(--key_color);
       display: block;
       padding: 9px 20px;
       font-size: 18px;
@@ -1452,7 +1511,7 @@ button:focus {
     -o-transition: all 300ms;
     transition: all 300ms; }
     #footer-Content ul.menu li a:hover {
-      color: #3ecf8e;
+      color: var(--key_color);
       padding-left: 5px;
       -webkit-transition: all 300ms;
       -o-transition: all 300ms;
