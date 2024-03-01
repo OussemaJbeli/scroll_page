@@ -591,47 +591,190 @@ button:focus {
 /* ==========================================================================
    About 
    ========================================================================== */
-#services .services-item {
-  padding: 60px 30px;
-  border: 1px solid #ddd;
-  -moz-transition: all .8s ease;
-  -webkit-transition: all .8s ease;
-  background-color: var(--card_gruond2);
-  transition: all .8s ease; }
-  #services .services-item:hover {
-    border: 1px solid var(--key_color);
-    box-shadow: 0px 0px 25px 0px rgba(95, 95, 95, 0.24);
-    -moz-transition: all .4s ease;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease; }
-  #services .services-item .icon {
-    background: var(--back_gruond1);
-    width: 110px;
-    height: 110px;
-    margin: 0px auto;
-    margin-bottom: 0px;
-    text-align: center;
-    display: block;
-    border-radius: 50%;
-    position: relative;
-    margin-bottom: 25px; }
-  #services .services-item .icon i {
-    font-size: 40px;
-    color: var(--key_color);
+   #services .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #services .card {
+    overflow: visible;
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+    background-color: var(--card_gruond2);
+  }
+  
+  #services .content {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300ms;
+    border-radius: 5px;
+  }
+  
+  #services .front, .back {
+    background-color: var(--card_gruond2);
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 30%; }
-  #services .services-item h4 {
-    font-size: 20px;
-    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  #services .back {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  #services .back::before {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 160px;
+    height: 160%;
+    background: var(--key_color);
+    animation: rotation_481 5000ms infinite linear;
+  }
+  
+  #services .back-content {
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    background-color: var(--card_gruond2);
+    border-radius: 5px;
     color: var(--key_color);
-    margin-bottom: 15px; }
-  #services .services-item p {
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: #fff; }
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  #services .back-content i{
+    font-size: 50px;
+  }
+  #services .back-content p{
+    font-size: 25px;
+  }
+  
+  #services .card:hover .content {
+    transform: rotateY(180deg);
+  }
+  
+  @keyframes rotation_481 {
+    0% {
+      transform: rotateZ(0deg);
+    }
+  
+    0% {
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  #services .front {
+    transform: rotateY(180deg);
+    color: white;
+  }
+  
+  #services .front .front-content {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #services .front-content .badge {
+    background-color: #00000055;
+    padding: 2px 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    width: fit-content;
+  }
+  
+  #services .description {
+    box-shadow: 0px 0px 10px 5px #00000088;
+    width: 100%;
+    padding: 10px;
+    background-color: #00000099;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+  }
+  
+  #services .title {
+    font-size: 15px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #services .title p {
+    width: 100%;
+  }
+  
+  #services .card-footer {
+    color: #ffffff88;
+    margin-top: 5px;
+    font-size: 8px;
+  }
+  
+  #services .front .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  #services .circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #fff566;
+    position: relative;
+    filter: blur(15px);
+    animation: floating 2600ms infinite linear;
+  }
+  
+  #services #bottom {
+    background-color: #ffe666;
+    left: 50px;
+    top: 0px;
+    width: 150px;
+    height: 150px;
+    animation-delay: -800ms;
+  }
+  
+  #services #right {
+    background-color: #fff022;
+    left: 160px;
+    top: -80px;
+    width: 30px;
+    height: 30px;
+    animation-delay: -1800ms;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translateY(0px);
+    }
+  
+    50% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(0px);
+    }
+  }
 /* ==========================================================================
    business-plan Section 
    ========================================================================== */
@@ -647,10 +790,18 @@ button:focus {
       font-weight: 600;
       margin-bottom: 25px; 
       color: var(--key_color);}
-    #business-plan .business-item-info p {
-      font-size: 16px;
-      margin-bottom: 20px; 
-      color: #fff;}
+      #business-plan .business-item-info .p {
+        margin: 50px 0;
+      }
+      #business-plan .business-item-info p {
+        font-size: 20px;
+        margin-bottom: 20px; 
+        color: #fff;
+      }
+      #business-plan .business-item-info p span{
+        font-size: 20px;
+        color: var(--key_color);
+      }
 
 /* ==========================================================================
    Features 
@@ -658,7 +809,7 @@ button:focus {
 #features {
   background: var(--back_gruond2); }
   #features .featured-bg {
-    background: var(--card_gruond2); }
+    background: transparent; }
   #features .featured-border1 {
     border-bottom: 1px solid #ededed;
     border-right: 1px solid #ededed; }
@@ -667,18 +818,24 @@ button:focus {
   #features .featured-border3 {
     border-right: 1px solid #ededed; }
   #features .feature-item {
+    background-color: var(--card_gruond2);
+    margin: 10px;
     padding: 30px;
     overflow: hidden;
     -moz-transition: all .8s ease;
     -webkit-transition: all .8s ease;
-    transition: all .8s ease; }
+    transition: all .8s ease; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;}
     #features .feature-item .feature-icon {
       background: var(--back_gruond1);
       width: 100px;
       height: 100px;
-      margin: 0px auto;
       margin-top: 0px;
-      margin-right: auto;
       margin-bottom: 0px;
       margin-bottom: 0px;
       margin-bottom: 0px;
@@ -686,9 +843,14 @@ button:focus {
       display: block;
       border-radius: 50%;
       position: relative;
-      margin-right: 30px;
+      margin:10px;
       border: 1px solid var(--key_color);
       margin-top: 12px; }
+      #features .feature-item .feature-info {
+        display: flex;
+        flex-direction: column;
+        width:70%;
+       }
       #features .feature-item .feature-icon i {
         font-size: 40px;
         color: var(--key_color);
@@ -702,9 +864,10 @@ button:focus {
       margin-bottom: 20px; }
     #features .feature-item p {
       font-size: 16px;
-      display: block; }
+      display: block; 
+    }
     #features .feature-item:hover {
-      box-shadow: 0px 0px 25px 0px rgba(95, 95, 95, 0.24);
+      box-shadow: 0px 0px 25px 0px var(--key_color);
       -moz-transition: all .8s ease;
       -webkit-transition: all .8s ease;
       transition: all .8s ease; }
