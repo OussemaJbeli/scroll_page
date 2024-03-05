@@ -39,9 +39,6 @@
     padding: 210px 0 280px; }
   #business-plan .business-item-info h3 {
     font-size: 28px; }
-  #business-plan .business-item-info p {
-    font-size: 13px;
-    margin-bottom: 20px; }
   .section {
     padding: 80px 0px; }
   #business-plan {
@@ -468,6 +465,32 @@
         height: 100%;
         /* transform:scale(0.8) translateX(-10px); */
       }
+      #business-plan .business-item-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #business-plan .business-item-info .p {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px 0;
+        align-items: start;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      #business-plan .card {
+        width: 250px;
+        height: 300px;
+        margin: 10px;
+      }
+      #business-plan .card-title {
+        color: #fff;
+        font-size: 30px;
+      }
+      
+      #business-plan .small-desc {
+        font-size: 20px;
+      }
     }
     @media (max-width: 800px){
       #testimonial .frame .discription .title{
@@ -540,28 +563,30 @@
     @media (max-width: 550px) {
       #home .first_part .contents .head-title{
         text-align: center;
-        font-size: 25px;
+        font-size: 22px;
       }
       .hero-area .contents .sub_title .multitext{
         text-align: center;
-        font-size: 30px;
-        height: 70px;
+        font-size: 45px;
+        height: 125px;
       }
       #home .first_part .contents p{
         text-align: center;
-        font-size: 14px;
+        font-size: 17px;
       }
       #home .first_part .contents .header-button{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
         margin-top: 20px;
       }
       #home .first_part .contents .button_home{
-        font-size: 10px;
+        font-size: 15px;
+        height: 50px;
         margin: 10px;
+        width: 200px;
       }
       #home .second_part{
         width: 100%;
@@ -599,6 +624,16 @@
       }
       #pricing .pricing-table h1 span{
         left: 4%;
+      }
+      #business-plan .card {
+        width: 350px;
+        height: 150px;
+      }
+      #business-plan .card-title {
+        font-size: 22px;
+      }
+      #business-plan .small-desc {
+        font-size: 18px;
       }
     }
    

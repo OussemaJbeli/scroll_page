@@ -832,18 +832,105 @@ Domain Path:      /languages/
          margin-bottom: 25px; 
          color: var(--key_color);}
          #business-plan .business-item-info .p {
-           margin: 50px 0;
+           margin: 20px 0;
+           display: flex;
+           flex-direction: column;
+           align-items: start;
+           justify-content: center;
          }
-         #business-plan .business-item-info p {
-           font-size: 20px;
-           margin-bottom: 20px; 
-           color: #fff;
-         }
-         #business-plan .business-item-info p span{
-           font-size: 20px;
-           color: var(--key_color);
-         }
-   
+
+         #business-plan .card-title {
+          color: #fff;
+          font-size: 1.5em;
+          line-height: normal;
+          font-weight: 700;
+          margin-bottom: 0.5em;
+        }
+        
+        #business-plan .small-desc {
+          font-size: 1.2em;
+          font-weight: 400;
+          line-height: 1.5em;
+          color: #fff;
+        }
+        #business-plan span {
+          font-size: 1em;
+          font-weight: 400;
+          line-height: 1.5em;
+          color: var(--dont_active);
+        }
+      
+        
+        #business-plan .go-corner {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          width: 2em;
+          height: 2em;
+          overflow: hidden;
+          top: 0;
+          right: 0;
+          background: var(--graduant_bg);
+          border-radius: 0 4px 0 32px;
+        }
+        
+        #business-plan .go-arrow {
+          margin-top: -4px;
+          margin-right: -4px;
+          color: white;
+          font-family: courier, sans;
+        }
+        
+        #business-plan .card {
+          display: block;
+          position: relative;
+          width: 500px;
+          height: 120px;
+          background-color: var(--card_gruond2);
+          border-radius: 10px;
+          padding: 10px;
+          margin: 12px 0;
+          text-decoration: none;
+          z-index: 0;
+          overflow: hidden;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #business-plan .card:before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          top: -16px;
+          right: -16px;
+          background: var(--graduant_bg);
+          height: 32px;
+          width: 32px;
+          border-radius: 32px;
+          transform: scale(1);
+          transform-origin: 50% 50%;
+          transition: transform 0.35s ease-out;
+        }
+        
+        #business-plan .card:hover:before {
+          transform: scale(38);
+        }
+        
+        #business-plan .card:hover .small-desc {
+          transition: all 0.5s ease-out;
+          color: rgba(255, 255, 255, 0.8);
+        }
+        
+        #business-plan .card:hover .card-title {
+          transition: all 0.5s ease-out;
+          color: #ffffff;
+        }
+        #business-plan .card:hover span {
+          transition: all 0.5s ease-out;
+          color: #ffffff;
+        }
+        
+        
    /* ==========================================================================
       Features 
       ========================================================================== */
