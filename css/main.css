@@ -643,6 +643,7 @@ Domain Path:      /languages/
        width: 250px;
        height: 350px;
        margin: 10px;
+       padding: 0;
        background-color: var(--card_gruond2);
      }
      
@@ -1197,7 +1198,7 @@ Domain Path:      /languages/
      #pricing .pricing-table h1 span {
        font-size: 16px;
        position: absolute;
-       left: 20%;
+       left: 0%;
        top: 10px; }
      #pricing .pricing-table ul {
        padding-bottom: 28px; }
@@ -1605,6 +1606,9 @@ Domain Path:      /languages/
      }
      #footer-Content  .footer_Subcontent .title_footer{
        margin-bottom: 50px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
      }
      #footer-Content .copyright {
        margin-top: 125px;
