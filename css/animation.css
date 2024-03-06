@@ -1,0 +1,141 @@
+/* up */
+.up_hidden {
+    opacity: 0;
+}
+.up_visible {
+    scroll-behavior: smooth;
+    animation: up_animation 1s forwards ease;
+}
+@keyframes up_animation{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    50%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/* right */
+.right_hidden {
+    opacity: 0;
+}
+.right_visible {
+    scroll-behavior: smooth;
+    animation: right_animation 1s forwards ease;
+}
+@keyframes right_animation{
+    0%{
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    50%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+/* left */
+.left_hidden {
+    opacity: 0;
+}
+.left_visible {
+    scroll-behavior: smooth;
+    animation: left_animation 1s forwards ease;
+}
+@keyframes left_animation{
+    0%{
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    50%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+/* slide */
+.sec1 .slides  .hidden {
+    opacity: 0;
+}
+.sec1 .slides  .active_next {
+    display: block;
+    transition: 1s ease;
+    animation: active_next_animation 1s forwards ease;
+}
+@keyframes active_next_animation{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.sec1 .slides  .active_prev {
+    display: block;
+    transition: 1s ease;
+    animation: active_prev_animation 1s forwards ease;
+}
+@keyframes active_prev_animation {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* sid bar */
+@keyframes active_rotate_animation {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(90deg);
+    }
+}
+@keyframes desactive_rotate_animation {
+    0%{
+        transform: rotateZ(90deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+/* SVG animations */
+  @keyframes color_anim2 {
+    0% {
+      fill: #86637a;
+    }
+  
+    50% {
+      fill: var(--color-background);
+    }
+  
+    100% {
+      fill: #86637a;
+    }
+  }
+    
+  /* Button animations */
+  @-webkit-keyframes btn-content2 {
+    0% {
+      outline: 5px solid var(--color-background);
+      outline-offset: 0;
+    }
+  }
+  
+  @keyframes btn-content2 {
+    0% {
+      outline: 10px solid var(--color-background);
+      outline-offset: 0;
+    }
+  }
