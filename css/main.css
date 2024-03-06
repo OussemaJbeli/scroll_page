@@ -514,7 +514,7 @@ Domain Path:      /languages/
      z-index: 9999999;
     transition: .4s ease; }
      .back-to-top:hover{
-      transform: translateY(-20px);
+      transform: scale(1.1);
      }
    .back-to-top i {
      color: #fff;
