@@ -509,11 +509,13 @@ Domain Path:      /languages/
      cursor: pointer;
      text-align: center;
      border-radius: 4px;
-     background: #5533ff;
-     background: var(--graduant_bg);
+     background: var(--key_color);
      box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
-     z-index: 9999999; }
-   
+     z-index: 9999999;
+    transition: .4s ease; }
+     .back-to-top:hover{
+      transform: translateY(-20px);
+     }
    .back-to-top i {
      color: #fff;
      font-size: 20px;
@@ -707,6 +709,7 @@ Domain Path:      /languages/
            background: #fff;
            color: var(--key_color); }
      .hero-area .intro-img {
+      min-height: 600px;
        padding: 180px 0 0px;
        position: relative;
        transform: scale(1.1) translateX(100px); }
@@ -984,13 +987,19 @@ Domain Path:      /languages/
           align-items: center;
           justify-content: center;
           position: absolute;
-          width: 2em;
-          height: 2em;
+          width: 2.5em;
+          height: 2.5em;
           overflow: hidden;
           top: 0;
           right: 0;
           background: var(--graduant_bg);
           border-radius: 0 4px 0 32px;
+        }
+        #business-plan .go-corner span{
+          color: var(--key_color);
+          font-size: 2em;
+          line-height: normal;
+          font-weight: 700;
         }
         
         #business-plan .go-arrow {
@@ -1004,7 +1013,7 @@ Domain Path:      /languages/
           display: block;
           position: relative;
           width: 500px;
-          height: 120px;
+          height: 140px;
           background-color: var(--card_gruond2);
           border-radius: 10px;
           padding: 10px;
@@ -1121,10 +1130,16 @@ Domain Path:      /languages/
          border: 1px solid var(--key_color);
          margin-top: 12px; }
          #features .feature-item .feature-info {
-           display: flex;
-           flex-direction: column;
-           width:70%;
-          }
+          display: flex;
+          flex-direction: column;
+          width:70%;
+         }
+         #features .feature-item .feature-info h4{
+          text-align: start;
+         }
+         #features .feature-item .feature-info p{
+          text-align: start;
+         }
          #features .feature-item .feature-icon i {
            font-size: 25px;
            color: var(--key_color);
@@ -1331,7 +1346,7 @@ Domain Path:      /languages/
          padding: 40px;
        }
        #testimonial .frame .discription .title{
-         font-size: 40px;
+         font-size: 35px;
          color: var(--key_color);
          margin-bottom: 20px;
          font-weight: 900;

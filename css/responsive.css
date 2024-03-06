@@ -146,20 +146,16 @@
     width: 98%; } }
 
 @media only screen and (max-width: 767px) {
-  .bg-inverse {
-    background: #191c1e; }
   .navbar-expand-md .navbar-brand, .navbar-expand-md .navbar-toggler {
     margin: 6px 15px; }
   .bg-inverse {
-    background: #191c1e; }
+    background: var(--graduant_bg); }
   .navbar {
     padding: 0; }
   .navbar-brand img {
     width: 100px; } }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .bg-inverse {
-    background: #191c1e; }
   .navbar {
     padding: 0; }
   .navbar-brand img {
@@ -177,8 +173,7 @@
     font-size: 14px;
     line-height: 26px; }
   .hero-area .contents .btn {
-    margin-top: 30px;
-    margin-right: 4px;
+    margin:40px 20px;
     text-transform: uppercase;
     width: 125px;
     height: 45px;
@@ -214,7 +209,12 @@
     line-height: 24px;
     margin-bottom: 0; }
   #features .feature-item {
-    padding: 10px; }
+    padding: 10px;
+    margin: 10px 0; }
+    #features .featured-bg .cards .card {
+      margin: 10px 0;
+      width: 100%;
+    }
   #features .feature-item .feature-icon {
     margin-bottom: 20px; }
   .showcase-area .pr-0, .px-0 {
@@ -494,7 +494,7 @@
     }
     @media (max-width: 800px){
       #testimonial .frame .discription .title{
-        font-size: 35px;
+        font-size: 25px;
         font-weight: 700;
       }
     }
@@ -519,7 +519,8 @@
         text-align: center;
       }
       #testimonial .frame .discription .under_desc{
-        text-align: center;
+        text-align: justify;
+        font-size: 18px;
       }
       #testimonial .frame .exemple_img{
         width: 100%;
@@ -554,7 +555,7 @@
         margin: 10px;
       }
       .container {
-        padding: 0 60px;
+        padding: 0 30px;
       }
       #blog .blog-item-wrapper {
         margin: 20px;
@@ -597,6 +598,7 @@
         margin-bottom: 200px;
       }
       #home .second_part .intro-img{
+        min-height: 400px;
         width: 600px;
         display: flex;
         justify-content: center;
