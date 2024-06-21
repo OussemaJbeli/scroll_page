@@ -1168,6 +1168,9 @@ section {
   .cursor{
     display: none;
   }
+  .🤚 {
+    display: none;
+  }
 }
 .about .container{
   position: relative;
@@ -2358,7 +2361,7 @@ section {
  .cursor{
   position: absolute;
   transform: translate(-50%,-50%);
-  background-color: var(--bg1-dark);
+  background-color: var(--title1-dark);
   mix-blend-mode: difference;
   width: 20px;
   height: 20px;
