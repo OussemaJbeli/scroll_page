@@ -2,1436 +2,596 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>طلاب</title>
 
-  <title>6</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- Google Fonts -->
-  <link href="https://db.onlinewebfonts.com/c/ec01fa8c1569eef75508e875bdcca375?family=User+Upright+W00+Bold+Cameo" rel="stylesheet">
+  <!-- 
+    - google font link
+  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Poppins:wght@600;700&family=Rubik:wght@400;500&display=swap"
+    rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <!-- {{-- logo --}} -->
+    <link rel="icon" type="icon" href="icon.ico"> 
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
+    <!-- {{-- fontawsom --}} -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body id="top">
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container-fluid d-flex container">
+  <!-- 
+    - #HEADER
+  -->
 
-      <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html"><span>Kais <span class="dote">.</span></span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
-
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#header">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#skills-section">SKILS</a></li>
-          <li><a href="#services">SERVICES</a></li>
-          <li><a href="#portfolio">PROJECTS</a></li>
-          <li><a href="#blog-section">BLOGS</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-
-          <li class="get-started"><a href="#about">Get Started</a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center hero-area">
+  <header class="header" data-header>
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-          <h3>Software Developer</h3>
-          <h1>Hello I'm</h1>
-          <h1 class="name">Jlassi Kais</h1>
-          <p>I excel at crafting elegent gigital experience and I am proficient in various programing languages and technologies</p>
-          <div class="buttons">
-            <button>DOWNLOAD CV</button>
-            <div class="card">
-              <a class="socialContainer containerOne" href="#">
-                <svg viewBox="0 0 16 16" class="socialSvg instagramSvg"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path> </svg>
-              </a>
-              <a class="socialContainer containerTwo" href="#">
-                <svg viewBox="0 0 16 16" class="socialSvg twitterSvg"> <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path> </svg>              
-              </a>
-              <a class="socialContainer containerThree" href="#">
-                <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
-              </a>
-              <a class="socialContainer containerFour" href="#">
-                <svg viewBox="0 0 16 16" class="socialSvg whatsappSvg"> <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path> </svg>
-              </a>
-            </div>                         
-          </div>
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        طلاب
+        <span class="tolab-icon"><i class="fa-solid fa-graduation-cap fa-lg"></i></span>
+      </a>
+
+      <button class="menu-open-btn" data-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="menu-close-btn" data-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          طلاب
+          <span class="tolab-icon"><i class="fa-solid fa-graduation-cap fa-lg"></i></span>
+        </a>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#hero" class="navbar-link">الرئيسية</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">من نحن؟</a>
+          </li>
+
+          <li>
+            <a href="#departments" class="navbar-link">محتوانا            </a>
+          </li>
+
+          <li>
+            <a href="#payment" class="navbar-link">عروضنا            </a>
+          </li>
+
+          <li>
+            <a href="#footer" class="navbar-link">تواصل معنا</a>
+          </li>
+
+        </ul>
+
+        <div class="buttons">
+          <button class="btn btn-secondary">تسجيل الدخول</button>
+          <button class="btn btn-secondary2">انضم الينا</button>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img animated" data-aos="zoom-in" data-aos-delay="100">
-          <div class="svg-frame">
-            <svg xmlns="http://www.w3.org/2000/svg">
-              <circle id ="out2" cx="100" cy="100" r="90" fill="none" stroke-width="2" 
-                      stroke-dasharray="5, 10, 15, 20, 25, 30"/>
-            </svg>
-            <img src="assets/img/user.png" class="img-fluid" alt="">
-          </div>
-        </div>
-      </div>
+
+      </nav>
+
     </div>
-  </section><!-- End Hero -->
+  </header>
 
-  <main id="main">
-    <section class="ftco-counter" id="section-counter">
-      <div class="container" data-aos-delay="100">
-        <div class="row" id="numbers_panel">
-          <div class="col-md-3 justify-content-center counter-wrap ftco-animate" data-aos="zoom-in" data-aos-delay="100">
-            <div class="block-18 d-flex">
-              <div class="icon">
-                <i class="fa-solid fa-briefcase"></i>
-                <div class="star-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="star-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="star-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="star-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="star-5">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="star-6">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-              </div>
-              <div class="text">
-                <strong class="number" id="number1">788</strong>
-                <span>Project Complete</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 justify-content-center counter-wrap ftco-animate" data-aos="zoom-in" data-aos-delay="200">
-            <div class="block-18 d-flex">
-              <div class="icon">
-                <i class="fa-solid fa-user-tie"></i>
-                <div class="star-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="star-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="star-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="star-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="star-5">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="star-6">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-              </div>
-              <div class="text">
-                <strong class="number" id="number2">200</strong>
-                <span>Happy Clients</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 justify-content-center counter-wrap ftco-animate" data-aos="zoom-in" data-aos-delay="300">
-            <div class="block-18 d-flex">
-              <div class="icon">
-                <i class="fa-solid fa-mug-hot"></i>
-                <div class="star-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="star-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="star-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="star-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="star-5">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="star-6">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-              </div>
-              <div class="text">
-                <strong class="number" id="number3">100</strong>
-                <span>Cups of coffee</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 justify-content-center counter-wrap ftco-animate" data-aos="zoom-in" data-aos-delay="400">
-            <div class="block-18 d-flex">
-              <div class="icon">
-                <i class="fa-solid fa-chart-line"></i>
-                <div class="star-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="star-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="star-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="star-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="star-5">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="star-6">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xml:space="preserve"
-                    version="1.1"
-                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 784.11 815.53"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs></defs>
-                    <g id="Layer_x0020_1">
-                      <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                      <path
-                        class="fil0"
-                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-              </div>
-              <div class="text">
-                <strong class="number" id="number4">75</strong>
-                <span>Years experienced</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
 
-        <div class="row justify-content-between">
-          <div class="col-lg-5 align-items-center justify-content-center about-img">
-            <img src="assets/img/about-1.jpg" class="img-fluid" alt="" data-aos="zoom-in">
-          </div>
-          <div class="col-lg-6 pt-5 pt-lg-0">
-            <p data-aos="fade-up">MY INTRO</p>
-            <h3 data-aos="fade-up">About Me</h3>
-            <p data-aos="fade-up" data-aos-delay="100">
-              A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-            </p>
-            <ul class="about-info" data-aos="fade-up" data-aos-delay="100">
-              <li class="d-flex"><span class="title">Name : </span> <span>  Clyde Nowitzki</span></li>
-              <li class="d-flex"><span class="title">Date of birth : </span><span>  January 01, 1990</span></li>
-              <li class="d-flex"><span class="title">Address : </span> <span>  San Francisco CA 97987 USA</span></li>
-              <li class="d-flex"><span class="title">Zip code : </span> <span>  1000</span></li>
-              <li class="d-flex"><span class="title">Email : </span> <span>  cydenowitzki@gmail.com</span></li>
-              <li class="d-flex"><span class="title">Phone : </span> <span>  +1-2234-5678-9-0</span></li>
-            </ul>
-            <ul class="wrapper" data-aos="zoom-in" data-aos-delay="100">
-              <li class="icon">
-                <span class="tooltip">Music</span>
-                <i class="fa-solid fa-music"></i>
-              </li>
-              <li class="icon">
-                <span class="tooltip">Travel</span>
-                <i class="fa-solid fa-plane"></i>
-              </li>
-              <li class="icon">
-                <span class="tooltip">Movie</span>
-                <i class="fa-solid fa-film"></i>
-              </li>
-              <li class="icon">
-                <span class="tooltip">Sports</span>
-                <i class="fa-solid fa-dumbbell"></i>
-              </li>
-            </ul>
-            
-          </div>
-        </div>
 
-        <div class="card" data-aos="zoom-in" data-aos-delay="100">
-          <div class="numbers">
-            <span class="number"></span>
-            <span class="number"></span>
-            <span class="number"></span>
-            <span class="number"></span>
-            <span class="number"></span>
-            <span class="number"></span>
-            <span class="number"></span>
-            <span class="number"></span>
-            <span class="number"></span>
-            <span class="number"></span>
-            <span class="number"></span>
-            <span class="number"></span>
-          </div>
-          <div class="needles">
-            <span class="h"></span>
-            <span class="m"></span>
-            <span class="s"></span>
-            <span class="center"></span>
-          </div>
-          <div class="pie"></div>
-        </div>
 
-      </div>
-    </section><!-- End About Section -->
 
-    <!-- ========skils ================-->
+  <main>
+    <article>
 
-    <section class="ftco-section" id="skills-section">
-      <div class="container">
-        <div class="section-title" data-aos="fade-up">
-          <span>SKILLS</span>
-          <h2>My Skills</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-        </div>
-        <div class="row progress-circle mb-5 cards">
-          <div class="col-lg-4 mb-4 card" data-aos="fade-up" data-aos-delay="100">
-            <div class="rounded-lg shadow p-4">
-              <h2 class="h5 font-weight-bold text-center mb-4">CSS</h2>
-  
-              <!-- Progress bar 1 -->
-              <div class="progress mx-auto" data-value='95'>
-                <span class="progress-left">
-                  <span class="progress-bar border-primary"></span>
-                </span>
-                <span class="progress-right">
-                  <span class="progress-bar border-primary"></span>
-                </span>
-                <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-                  <div class="h2 font-weight-bold">95<sup class="small">%</sup></div>
-                </div>
-              </div>
-              <!-- END -->
-  
-              <!-- Demo info -->
-              <div class="row text-center mt-4">
-                <div class="col-6 border-right">
-                  <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
-                </div>
-                <div class="col-6">
-                  <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
-                </div>
-              </div>
-              <!-- END -->
-            </div>
-          </div>
-  
-          <div class="col-lg-4 mb-4 card" data-aos="fade-up" data-aos-delay="100">
-            <div class="rounded-lg shadow p-4">
-              <h2 class="h5 font-weight-bold text-center mb-4">HTML</h2>
-  
-              <!-- Progress bar 1 -->
-              <div class="progress mx-auto" data-value='98'>
-                <span class="progress-left">
-                  <span class="progress-bar border-primary"></span>
-                </span>
-                <span class="progress-right">
-                  <span class="progress-bar border-primary"></span>
-                </span>
-                <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-                  <div class="h2 font-weight-bold">98<sup class="small">%</sup></div>
-                </div>
-              </div>
-              <!-- END -->
-  
-              <!-- Demo info -->
-              <div class="row text-center mt-4">
-                <div class="col-6 border-right">
-                  <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
-                </div>
-                <div class="col-6">
-                  <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
-                </div>
-              </div>
-              <!-- END -->
-            </div>
-          </div>
-  
-          <div class="col-lg-4 mb-4 card" data-aos="fade-up" data-aos-delay="100">
-            <div class="rounded-lg shadow p-4">
-              <h2 class="h5 font-weight-bold text-center mb-4">jQuery</h2>
-  
-              <!-- Progress bar 1 -->
-              <div class="progress mx-auto" data-value='68'>
-                <span class="progress-left">
-                  <span class="progress-bar border-primary"></span>
-                </span>
-                <span class="progress-right">
-                  <span class="progress-bar border-primary"></span>
-                </span>
-                <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-                  <div class="h2 font-weight-bold">68<sup class="small">%</sup></div>
-                </div>
-              </div>
-              <!-- END -->
-  
-              <!-- Demo info -->
-              <div class="row text-center mt-4">
-                <div class="col-6 border-right">
-                  <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
-                </div>
-                <div class="col-6">
-                  <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
-                </div>
-              </div>
-              <!-- END -->
-            </div>
-          </div>
-  
-          <div class="col-lg-4 mb-4 card" data-aos="fade-up" data-aos-delay="100">
-            <div class="rounded-lg shadow p-4">
-              <h2 class="h5 font-weight-bold text-center mb-4">Photoshop</h2>
-  
-              <!-- Progress bar 1 -->
-              <div class="progress mx-auto" data-value='92'>
-                <span class="progress-left">
-                  <span class="progress-bar border-primary"></span>
-                </span>
-                <span class="progress-right">
-                  <span class="progress-bar border-primary"></span>
-                </span>
-                <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-                  <div class="h2 font-weight-bold">92<sup class="small">%</sup></div>
-                </div>
-              </div>
-              <!-- END -->
-  
-              <!-- Demo info -->
-              <div class="row text-center mt-4">
-                <div class="col-6 border-right">
-                  <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
-                </div>
-                <div class="col-6">
-                  <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
-                </div>
-              </div>
-              <!-- END -->
-            </div>
-          </div>
-  
-          <div class="col-lg-4 mb-4 card" data-aos="fade-up" data-aos-delay="100">
-            <div class="rounded-lg shadow p-4">
-              <h2 class="h5 font-weight-bold text-center mb-4">WordPress</h2>
-  
-              <!-- Progress bar 1 -->
-              <div class="progress mx-auto" data-value='83'>
-                <span class="progress-left">
-                  <span class="progress-bar border-primary"></span>
-                </span>
-                <span class="progress-right">
-                  <span class="progress-bar border-primary"></span>
-                </span>
-                <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-                  <div class="h2 font-weight-bold">83<sup class="small">%</sup></div>
-                </div>
-              </div>
-              <!-- END -->
-  
-              <!-- Demo info -->
-              <div class="row text-center mt-4">
-                <div class="col-6 border-right">
-                  <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
-                </div>
-                <div class="col-6">
-                  <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
-                </div>
-              </div>
-              <!-- END -->
-            </div>
-          </div>
-  
-          <div class="col-lg-4 mb-4 card" data-aos="fade-up" data-aos-delay="100">
-            <div class="rounded-lg shadow p-4">
-              <h2 class="h5 font-weight-bold text-center mb-4">SEO</h2>
-  
-              <!-- Progress bar 1 -->
-              <div class="progress mx-auto" data-value='95'>
-                <span class="progress-left">
-                  <span class="progress-bar border-primary"></span>
-                </span>
-                <span class="progress-right">
-                  <span class="progress-bar border-primary"></span>
-                </span>
-                <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-                  <div class="h2 font-weight-bold">95<sup class="small">%</sup></div>
-                </div>
-              </div>
-              <!-- END -->
-  
-              <!-- Demo info -->
-              <div class="row text-center mt-4">
-                <div class="col-6 border-right">
-                  <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
-                </div>
-                <div class="col-6">
-                  <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
-                </div>
-              </div>
-              <!-- END -->
-            </div>
-          </div>
-        </div>
-        <div class="🤚">
-          <div class="👉"></div>
-          <div class="👉"></div>
-          <div class="👉"></div>
-          <div class="👉"></div>
-          <div class="🌴"></div>		
-          <div class="👍"></div>
-        </div>
-      </div>
-    </section>
+      <!-- 
+        - #HERO
+      -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <span>I AM GRAT AT</span>
-          <h2>We do awesome services for our clients</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-    <section class="ftco-hireme">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-md-8 col-lg-8 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="100">
-            <div class="w-100 py-4">
-              <h2>Have a project on your mind.</h2>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly.</p>
-              <button class="cssbuttons-io-button">
-                Contact Me
-                <div class="icon">
-                  <svg
-                    height="24"
-                    width="24"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M0 0h24v24H0z" fill="none"></path>
-                    <path
-                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </div>
-              </button>              
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 d-flex align-items-end">
-            <img src="assets/img/author.png" class="img-fluid" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <span>ACCOMPLISHMENTS</span>
-          <h2>My Projects</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-plus-circle"></i></a>
-                <a href="#" title="More Details"><i class="icofont-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= blog Section ======= -->
-    <section class="ftco-section" id="blog-section">
-      <div class="container">
-        <div class="section-title" data-aos="fade-up">
-          <span>ACCOMPLISHMENTS</span>
-          <h2>My Projects</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-        </div>
-        <div class="blogs_cards">
-          <div class="ftco-animate" data-aos="zoom-in" data-aos-delay="100">
-            <a href="single.html" class="block-20">
-              <img src="assets/img/portfolio/portfolio-1.jpg" alt="">
-            </a>
-            <div class="blog_discription">
-              <div class="date">
-                <p>
-                  <span class="mr-2">July 03, 2020</span>
-                </p>
-              </div>
-              <h3 class="heading">title1</h3>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              <button class="learn-more">
-                <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-                </span>
-                <span class="button-text">Learn More</span>
-              </button>
-            </div>
-          </div>
-          <div class="ftco-animate" data-aos="zoom-in" data-aos-delay="200">
-            <a href="single.html" class="block-20">
-              <img src="assets/img/portfolio/portfolio-3.jpg" alt="">
-            </a>
-            <div class="blog_discription">
-              <div class="date">
-                <p>
-                  <span class="mr-2">July 03, 2020</span>
-                </p>
-              </div>
-              <h3 class="heading">title1</h3>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              <button class="learn-more">
-                <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-                </span>
-                <span class="button-text">Learn More</span>
-              </button>
-            </div>
-          </div>
-          <div class="ftco-animate" data-aos="zoom-in" data-aos-delay="300">
-            <a href="single.html" class="block-20">
-              <img src="assets/img/portfolio/portfolio-5.jpg" alt="">
-            </a>
-            <div class="blog_discription">
-              <div class="date">
-                <p>
-                  <span class="mr-2">July 03, 2020</span>
-                </p>
-              </div>
-              <h3 class="heading">title1</h3>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              <button class="learn-more">
-                <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-                </span>
-                <span class="button-text">Learn More</span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="buttom_butt">
-          <button class="cssbuttons-io-button" data-aos="fade-up">
-            Contact Me
-            <div class="icon">
-              <svg
-                height="24"
-                width="24"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0 0h24v24H0z" fill="none"></path>
-                <path
-                  d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </div>
-          </button> 
-        </div>
-      </div>
-    </section>
-
-    <!-- ======= Contact Us Section ======= -->
-    <section id="contact" class="contact">
+      <section class="hero" id="hero">
         <div class="container">
 
-          <div class="section-title" data-aos="fade-up">
-            <span>CONTACT US</span>
-            <h2>Have a Project?</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-          </div>
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" alt="A young lady sits, holding a pen and a notebook.">
+          </figure>
 
-          <div class="row">
+          <div class="hero-content">
 
-            <div class="col-lg-5 d-flex" data-aos="fade-up" data-aos-delay="100">
-              <div class="info">
-                <div class="address">
-                  <i class="icofont-google-map"></i>
-                  <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
+            <h2 class="h2 hero-title">
+              <p>طلاب</p>
+              المنصّة التعليميّة الأولى
+              عبر الإنترنت في الامارات
+            </h3>
+            <p class="section-text">
+              تمتع الآن بدروس دعم عبر الإنترنت في جميع المواد وعلى مختلف المستويات (الابتدائي والأساسي والثانوي)، ابتداءً من السنة الرابعة ابتدائي إلى البكالوريا
+            </p>
 
-                <div class="email">
-                  <i class="icofont-envelope"></i>
-                  <h4>Email:</h4>
-                  <p>info@example.com</p>
-                </div>
-
-                <div class="phone">
-                  <i class="icofont-phone"></i>
-                  <h4>Call:</h4>
-                  <p>+1 5589 55488 55s</p>
-                </div>
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-              </div>
-
-            </div>
-
-            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="name">Your Name</label>
-                    <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validate"></div>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="name">Your Email</label>
-                    <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validate"></div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="name">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group">
-                  <label for="name">Message</label>
-                  <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
-                  <div class="validate"></div>
-                </div>
-                <div class="mb-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
-              </form>
-            </div>
+            <button class="btn btn-primary">ابدأ الآن</button>
 
           </div>
 
         </div>
-    </section>
-    <!-- End Contact Us Section -->
+      </section>
 
-  </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container py-4">
-      <div class="copyright">
-        &copy; <strong><span>2024</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">Jbeli Oussema</a>
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/about-banner.png" alt="Eduland students" class="about-img">
+
+            <img src="./assets/images/about-vector.svg" alt="Vector line art" class="vector-line">
+
+            <button class="play-btn">
+              <ion-icon name="play"></ion-icon>
+            </button>
+
+          </figure>
+
+          <div class="about-content">
+
+            <h2 class="h2 about-title">ماهي منصّة طلاب ؟</h2>
+
+            <p class="section-text">
+              طلاب هي أوّل منصّة تعليميّة عبر الإنترنت في الامارات موجّهة لتلامذة الابتدائي والأساسي والثّانوي، نقدّم دروس دعم في شكل فيديوهات مسجّلة لشرح كلّ دروس البرنامج الدّراسي تحت إشراف ثلّة من الأساتذة والمربّين من ذوي الخبرة من كامل أنحاء الجمهورية.
+            </p>
+            
+            <button class="btn btn-primary">ابدأ الآن</button>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #DEPARTMENTS
+      -->
+
+      <section class="departments" id="departments">
+        <div class="container">
+
+          <img src="./assets/images/departmets-vector.svg" alt="Vector line art" class="vector-line">
+
+          <h2 class="h2 departments-title">ماذا نقدّم ؟</h2>
+
+          <ul class="departments-list">
+
+            <li>
+              <div class="departments-card">
+
+                <a href="#" class="card-banner">
+                  <figure>
+                    <img src="./assets/images/depertment-1.png" alt="Artificial Intelligence">
+                  </figure>
+                </a>
+
+                <p class="card-text">
+                  فيديوهات تفسير الدروس
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="departments-card">
+
+                <a href="#" class="card-banner">
+                  <figure>
+                    <img src="./assets/images/depertment-2.png" alt="Civil Engineering">
+                  </figure>
+                </a>
+                <p class="card-text">
+                  تلاخيص الدروس
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="departments-card">
+
+                <a href="#" class="card-banner">
+                  <figure>
+                    <img src="./assets/images/depertment-3.png" alt="Business Studies">
+                  </figure>
+                </a>
+
+                <p class="card-text">
+                  تمارين مرفقة بالإصلاح
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-primary">ابدأ الآن</button>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #INSTRUCTOR
+      -->
+
+      <section class="instructor" class="id">
+        <div class="container">
+
+          <img src="./assets/images/instructor-vactor-1.svg" alt="Vector line art" class="vector-line">
+
+          <div class="title-wrapper">
+            <h2 class="h3 instructor-title">من يمكنه الاستفادة من منصّة طلاب</h2>
+
+            <button class="btn btn-primary">ابدأ الآن</button>
+
+          </div>
+
+          <ul class="instructor-list">
+
+            <li>
+              <div class="instructor-card">
+
+                <figure class="card-banner card-banner2">
+                  <img src="./assets/images/master.png" alt="Sellina">
+                </figure>
+
+                <a href="#">
+                  <h3 class="card-title">الاساتذة/المعلمين</h3>
+                </a>
+
+                <p class="card-subtitle">ابق على تواصل دائم مع تلامذتك وانقل نشاطك التعليميّ إلى المنصّة لتساهم في تقديم أفضل بيئة تعليميّة رقميّة للتلاميذ</p>
+
+
+              </div>
+            </li>
+
+            <li>
+              <div class="instructor-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/student.png" alt="John Smith">
+                </figure>
+
+                <a href="#">
+                  <h3 class="card-title">التلاميذ/الطلبة</h3>
+                </a>
+
+                <p class="card-subtitle">ابدأ مراجعتك وتمتّع بأفضل محتوى دعم عن بعد و ابق على تواصل مع أساتذتك و معلّميك في المنصّة دون تكاليف باهظة</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/instructor-vactor-2.svg" alt="Vector line art" class="vector-line">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta">
+        <div class="container">
+
+          <div class="title-wrapper">
+
+            <h2 class="h2 cta-title">
+              <span>ابدأ طريقك نحو النجاح</span>
+
+              <img src="./assets/images/cta-vector.svg" alt="Vector arrow art" class="vector-line">
+            </h2>
+
+            <button class="btn btn-primary">ابدأ الآن</button>
+
+          </div>
+
+          <div class="cta-banner"></div>
+
+        </div>
+      </section>
+
+            <!-- 
+        - #DEPARTMENTS
+      -->
+
+      <section class="departments" id="payment">
+        <div class="container">
+
+          <img src="./assets/images/departmets-vector.svg" alt="Vector line art" class="vector-line">
+
+          <h2 class="h3 departments-title">تمتّع بأفضل محتوى تعليمي وبدعم متواصل طيلة السّنة الدراسية من خلال مختلف عروضنا.</h2>
+
+          <ul class="departments-list">
+
+            <li>
+              <div class="plan">
+                <div class="inner">
+                  <span class="pricing">
+                    <span>
+                      $49 <small>/ m</small>
+                    </span>
+                  </span>
+                  <p class="title">Professional</p>
+                  <p class="info">This plan is for those who have a team already and running a large business.</p>
+                  <ul class="features">
+                    <li>
+                      <span class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                        </svg>
+                      </span>
+                      <span><strong>20</strong> team members</span>
+                    </li>
+                    <li>
+                      <span class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                        </svg>
+                      </span>
+                      <span>Plan <strong>team meetings</strong></span>
+                    </li>
+                    <li>
+                      <span class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                        </svg>
+                      </span>
+                      <span>File sharing</span>
+                    </li>
+                  </ul>
+                  <div class="action">
+                  <a class="button" href="#">
+                    Choose plan
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="plan">
+                <div class="inner">
+                  <span class="pricing">
+                    <span>
+                      $49 <small>/ m</small>
+                    </span>
+                  </span>
+                  <p class="title">Professional</p>
+                  <p class="info">This plan is for those who have a team already and running a large business.</p>
+                  <ul class="features">
+                    <li>
+                      <span class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                        </svg>
+                      </span>
+                      <span><strong>20</strong> team members</span>
+                    </li>
+                    <li>
+                      <span class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                        </svg>
+                      </span>
+                      <span>Plan <strong>team meetings</strong></span>
+                    </li>
+                    <li>
+                      <span class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                        </svg>
+                      </span>
+                      <span>File sharing</span>
+                    </li>
+                  </ul>
+                  <div class="action">
+                  <a class="button" href="#">
+                    Choose plan
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="plan">
+                <div class="inner">
+                  <span class="pricing">
+                    <span>
+                      $49 <small>/ m</small>
+                    </span>
+                  </span>
+                  <p class="title">Professional</p>
+                  <p class="info">This plan is for those who have a team already and running a large business.</p>
+                  <ul class="features">
+                    <li>
+                      <span class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                        </svg>
+                      </span>
+                      <span><strong>20</strong> team members</span>
+                    </li>
+                    <li>
+                      <span class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                        </svg>
+                      </span>
+                      <span>Plan <strong>team meetings</strong></span>
+                    </li>
+                    <li>
+                      <span class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                        </svg>
+                      </span>
+                      <span>File sharing</span>
+                    </li>
+                  </ul>
+                  <div class="action">
+                  <a class="button" href="#">
+                    Choose plan
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-primary">ابدأ الآن</button>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            طلاب
+            <span class="tolab-icon"><i class="fa-solid fa-graduation-cap fa-lg"></i></span>
+          </a>
+
+          <p class="footer-text">
+            ابدأ طريقك نحو النجاح          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-google"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
       </div>
     </div>
-  </footer><!-- End Footer -->
 
-  <div class="loading_page" id="loading_page">
-    <div class="loader">
-      <div class="box box0">
-        <div></div>
-      </div>
-      <div class="box box1">
-        <div></div>
-      </div>
-      <div class="box box2">
-        <div></div>
-      </div>
-      <div class="box box3">
-        <div></div>
-      </div>
-      <div class="box box4">
-        <div></div>
-      </div>
-      <div class="box box5">
-        <div></div>
-      </div>
-      <div class="box box6">
-        <div></div>
-      </div>
-      <div class="box box7">
-        <div></div>
-      </div>
-      <div class="ground">
-        <div></div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2024 <a href="">طلاب</a>.  
+          جميع الحقوق محفوظة
+        </p>
       </div>
     </div>
-  </div>
-  <script>
-      function hideLandingPage() {
-          var landingPage = document.getElementById('loading_page');
-          if (landingPage) {
-              landingPage.style.display = 'none';
-          }
-      }
-      setTimeout(hideLandingPage, 3000);
-  </script>
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
-  <!-- cursor -->
-  <div class="cursor" id="cursor"></div>
-  <script>
-      const cursor = document.querySelector('.cursor');
-      document.addEventListener('mousemove', (e)=>{
-        cursor.style.left = e.pageX + 'px';
-        cursor.style.top = e.pageY + 'px';
-      });
-  </script>
+  </footer>
 
-  <!-- counter -->
-  <script>
 
-    let number1 = document.getElementById('number1');
-    let number2 = document.getElementById('number2');
-    let number3 = document.getElementById('number3');
-    let number4 = document.getElementById('number4');
-    let numbers_panel = document.getElementById('numbers_panel')
-    
-    max_num1=number1.innerText
-    max_num2=number2.innerText
-    max_num3=number3.innerText
-    max_num4=number4.innerText
-  
-    number1.innerText = 0;
-    number2.innerText = 0;
-    number3.innerText = 0;
-    number4.innerText = 0;
-    
-    let i=0;
-    let call = true;
-    function counter(i,max,element){
-      if(i<=max){
-        setTimeout(function() {
-          element.innerText = i;
-          i++;
-          counter(i,max,element);
-        }, (10000/max)/2);
-      }
-    };
-  // up
-  document.addEventListener("DOMContentLoaded", function () {
-    
-    console.log('hello');
-      function isElementInViewport(el) {
-        var rect = el.getBoundingClientRect();
-        return (
-          rect.top >= 0 &&
-          rect.left >= 0 &&
-          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-      }
-    
-      function handleScroll() {
-        animatedElements.forEach(function (element) {
-          if (isElementInViewport(element)) {
-            if(element == numbers_panel && call){
-              counter(i,max_num1,number1);
-              counter(i,max_num2,number2);
-              counter(i,max_num3,number3);
-              call = false
-            }
-          }
-        });
-      }
-    
-      window.addEventListener("scroll", handleScroll);
 
-      handleScroll();
-    });
 
-  </script>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+  <!-- 
+    - #GO TO TOP
+  -->
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
