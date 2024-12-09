@@ -23,13 +23,20 @@
   --surface-color: #ffffff; 
   --contrast-color: #ffffff; 
   --filter_video: #2d3249;
-  --header_color: #fff;
+  --video_text1: #fff;
+  --video_text2: #d3d3d3;
 }
-.header_color{
-  color: var(--header_color)
+.video_text1{
+  color: var(--video_text1) !important
+}
+.video_text2{
+  color: var(--video_text2) !important
 }
 .action_color{
   color: var(--action_color)
+}
+.bg-transparent{
+  background: color-mix(in srgb, var(--filter_video), transparent 30%) !important;
 }
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
@@ -93,8 +100,21 @@ h6 {
   font-family: var(--heading-font);
 }
 /**************video**************/
-video{
+video {
+  position: fixed;
+  inset: 0;
+  display: block;
   width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+main{
+  z-index: 2;
+  position: relative; 
+}
+footer{
+  z-index: 2;
 }
 /* PHP Email Form Messages
 ------------------------------*/
@@ -174,12 +194,13 @@ video{
 }
 
 @media (min-width: 1200px) and (max-width: 1600px) {
-  .header~main {
-    margin-left: 160px;
+  .section {
+    padding-left: 160px !important;
   }
 
   .header~main .hero {
-    margin-left: -160px;
+    margin-left: 0;
+    padding-left: 0px !important;
     width: 100vw;
   }
 }
@@ -532,24 +553,6 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.hero video {
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-.hero:before {
-  content: "";
-  background: color-mix(in srgb, var(--filter_video), transparent 30%);
-  position: absolute;
-  inset: 0;
-  z-index: 2;
 }
 
 .hero .container {

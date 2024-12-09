@@ -58,24 +58,54 @@
   /**
    * Scroll top button
    */
-  let scrollTop = document.querySelector('.scroll-top');
-
+  const scrollTop = document.querySelector('.scroll-top');
+  const videoElement = document.querySelector('video'); // Select the video element
+  const videoSrc = document.getElementById('video_src');
+  
+  // Track the current video source
+  let currentVideo = videoSrc.src; 
+  
   function toggleScrollTop() {
+    // Toggle scroll-to-top button visibility
     if (scrollTop) {
-      window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+      if (window.scrollY > 100) {
+        scrollTop.classList.add('active');
+      } else {
+        scrollTop.classList.remove('active');
+      }
+    }
+  
+    // Determine the correct video source based on scroll position
+    let newVideo;
+    if (window.scrollY > window.innerHeight) {
+      newVideo = 'assets/v6.mp4';
+    } else {
+      newVideo = 'assets/v4.mp4';
+    }
+  
+    // Change video source only if it has changed
+    if (currentVideo !== location.origin + '/' + newVideo) {
+      videoSrc.src = newVideo;
+      currentVideo = location.origin + '/' + newVideo;
+      videoElement.load(); // Reload the video
     }
   }
-  scrollTop.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+  
+  // Scroll to top functionality
+  if (scrollTop) {
+    scrollTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
     });
-  });
-
+  }
+  
+  // Attach event listeners
   window.addEventListener('load', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
-
+  
   /**
    * Animation on scroll function and init
    */
