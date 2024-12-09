@@ -33,7 +33,7 @@
   color: var(--video_text2) !important
 }
 .action_color{
-  color: var(--action_color)
+  color: var(--action_color) !important
 }
 .bg-transparent{
   background: color-mix(in srgb, var(--filter_video), transparent 30%) !important;
@@ -545,7 +545,7 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero {
+/* .hero {
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -553,8 +553,72 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
+} */
+#hero {
+  /* background-image: url(/assets/img/lake.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  background-color: transparent;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.hero-section-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  min-height: 85%;
+  width: 85%;
+  border-radius: 30px;
+  border: 2px solid rgba(211, 211, 211, 0.2);
+  backdrop-filter: blur(8px);
+}
+/* Hero Content */
+.hero-content {
+  padding: 15px 25px 0 25px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
 }
 
+/* Right Section */
+.hero-content img {
+  width: 90%;
+  filter: drop-shadow(0 0 10px rgb(0, 225, 225))
+    drop-shadow(0 0 20px rgb(0, 225, 225))
+    drop-shadow(0 0 40px rgb(0, 225, 225))
+    drop-shadow(0 0 100px rgb(0, 225, 225));
+}
+.right-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Right Section Animation */
+@keyframes rotatePlanet {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.image-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotatePlanet 120s linear infinite;
+}
+
+/* left Section */
+.left-section {
+  display:flex;
+  align-items: center;
+  z-index: 1;
+  padding: 10px;
+}
+/* test top */
 .hero .container {
   position: relative;
   z-index: 3;
@@ -572,6 +636,10 @@ section,
   margin-top: 10px;
   font-size: 35px;
   font-weight: 600;
+}
+
+.hero .typed-cursor{
+  color: var(--action_color) !important;
 }
 
 .hero p {
@@ -1676,9 +1744,11 @@ section,
   color: var(--action_color);
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+@media (max-width: 700px) {
+  .hero-content {
+    display: block; 
+  }
+  .right-section {
+    display: none;
+  }
 }
