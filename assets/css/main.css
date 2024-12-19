@@ -555,10 +555,10 @@ section,
   justify-content: center;
 } */
 #hero {
-  /* background-image: url(/assets/img/lake.jpg);
+  background-image: url(/assets/img/lake.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   background-color: transparent;
   min-height: 100vh;
   display: flex;
@@ -885,7 +885,7 @@ section,
 .about .content ul li {
   margin-bottom: 20px;
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 
 .about .content ul strong {

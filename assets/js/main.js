@@ -75,12 +75,26 @@
       }
     }
   
+    // Get the resume section
+    const resumeSection = document.getElementById('resume');
+    const resumeRect = resumeSection.getBoundingClientRect();
+  
     // Determine the correct video source based on scroll position
     let newVideo;
-    if (window.scrollY > window.innerHeight) {
-      newVideo = 'assets/v5.mp4';
+    console.log('Current scroll position:', window.scrollY);
+    console.log('Resume section top:', resumeRect.top);
+    
+    // Check if the resume section is entering the viewport
+    if (resumeRect.top <= window.innerHeight) {
+      newVideo = 'assets/v4.mp4'; // Change to video 2 when the resume section is visible
+      console.log('Switching to video 2');
+    } 
+    else if (window.scrollY > window.innerHeight) {
+      newVideo = 'assets/vv2.mp4'; // Change to video 1 for other conditions
+      console.log('Switching to video 1');
     } else {
-      newVideo = 'assets/vv1.mp4';
+      newVideo = 'assets/vv1.mp4'; // Default video
+      console.log('Switching to video 3');
     }
   
     // Change video source only if it has changed
